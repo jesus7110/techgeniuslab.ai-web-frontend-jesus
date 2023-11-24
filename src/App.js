@@ -21,6 +21,7 @@ function App() {
     <Navbar/>
     <Hero/>
     <LogoCloud/>
+    <ScrollCard/>
     <AboutUs/>
     <Grid/>
     <Stats/>
