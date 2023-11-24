@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Error from './components/Error';
-import SchoolRegistration from './components/SchoolRegistration'
+import SchoolRegistration from './components/SchoolRegistration';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,8 +13,9 @@ root.render(
   <BrowserRouter>
        <Routes>
         <Route exact path="/" element={<App/>} />
+        <Route exact path="/register" element={<SchoolRegistration/>}/>
         <Route path="*" element={<Error/>} />
-        <Route path="/register" elements={<SchoolRegistration/>}/>
+        
       </Routes>
       </BrowserRouter>
 );
