@@ -15,6 +15,10 @@
 
 import c1 from '../assets/c1.png'
 import c2 from '../assets/c2.png'
+import c3 from '../assets/c3.png'
+import c4 from '../assets/c4.png'
+import c5 from '../assets/c5.png'
+
 const products = [
     {
       id: 1,
@@ -36,7 +40,7 @@ const products = [
         id: 3,
         //name: 'Basic Tee',
         href: '#',
-        imageSrc: c1,
+        imageSrc: c3,
         imageAlt: "",
         
       
@@ -45,7 +49,7 @@ const products = [
         id: 4,
         //name: 'Basic Tee',
         href: '#',
-        imageSrc: c2,
+        imageSrc: c4,
         imageAlt: "",
         
       },
@@ -53,7 +57,7 @@ const products = [
         id: 5,
         //name: 'Basic Tee',
         href: '#',
-        imageSrc: c1,
+        imageSrc: c5,
         imageAlt: "",
         
       },
