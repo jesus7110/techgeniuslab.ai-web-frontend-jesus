@@ -9,9 +9,10 @@ import Error from './components/Error';
 import Grid from './components/Grid';
 import AboutUs from './components/AboutUs';
 import Footer from './components/Footer';
-import SchoolRegistration from './components/SchoolRegistration'
-import ScrollCard from './components/ScrollCard'
+import SchoolRegistration from './components/SchoolRegistration';
+import ScrollCard from './components/ScrollCard';
 import LogoCloud from './components/LogoCloud';
+import AboutWorkshop from './components/AboutWorkshop';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
     <LogoCloud/>
     <ScrollCard/>
     <Stats/>
+    <AboutWorkshop/>
     <Cta/>
     <Footer/>
     
