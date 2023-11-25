@@ -22,30 +22,33 @@
 import { useState } from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { RadioGroup } from '@headlessui/react'
+import w1 from '../assets/w1.png'
+import w2 from '../assets/w2.png'
+import w3 from '../assets/w3.png'
+import w4 from '../assets/w4.png'
 
 const product = {
-  name: 'Basic Tee 6-Pack',
+  name: 'Explore Workshop',
   price: '$192',
   href: '#',
   breadcrumbs: [
-    { id: 1, name: 'Men', href: '#' },
-    { id: 2, name: 'Clothing', href: '#' },
+    { id: 1, name: 'Home', href: '/' },
   ],
   images: [
     {
-      src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-secondary-product-shot.jpg',
+      src: w1,
       alt: 'Two each of gray, white, and black shirts laying flat.',
     },
     {
-      src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg',
+      src: w3,
       alt: 'Model wearing plain black basic tee.',
     },
     {
-      src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-02.jpg',
+      src: w4,
       alt: 'Model wearing plain gray basic tee.',
     },
     {
-      src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-featured-product-shot.jpg',
+      src: w2,
       alt: 'Model wearing plain white basic tee.',
     },
   ],
@@ -288,7 +291,7 @@ export default function Example() {
                 type="submit"
                 className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
-                Add to bag
+                Request a Workshop
               </button>
             </form>
           </div>

@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Error from './components/Error';
 import SchoolRegistration from './components/SchoolRegistration';
 import Workshop from './components/Workshop';
-import AboutWorkshop from './components/AboutWorkshop';
+import ExploreWorkshop from './components/ExploreWorkshop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,7 +16,7 @@ root.render(
         <Route exact path="/" element={<App/>} />
         <Route exact path="/register" element={<SchoolRegistration/>}/>
         <Route path="/workshop" element={<Workshop/>} />
-        <Route path="/aboutworkshop" element={<AboutWorkshop/>} />
+        <Route path="/exploreworkshop" element={<ExploreWorkshop/>} />
         <Route path="*" element={<Error/>} />
         
       </Routes>
