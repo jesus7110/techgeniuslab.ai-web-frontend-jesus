@@ -23,7 +23,6 @@ function App() {
     <LogoCloud/>
     <ScrollCard/>
     <Stats/>
-    <Grid/>
     <Cta/>
     <Footer/>
     
