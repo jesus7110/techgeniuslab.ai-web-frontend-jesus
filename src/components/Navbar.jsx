@@ -3,11 +3,12 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import LOGO from './logo_nav_ico.png'
+import LOGO2 from './logo_nav2.png'
 
 
 
 const navigation = [
-    { name: 'Home', href: '#' },
+    { name: 'Home', href: '/' },
     { name: 'About Us', href: '#' },
     { name: 'Workshop', href: '/workshop' },
     { name: 'Contact', href: '#' },
@@ -58,7 +59,7 @@ const Navbar = () => {
                 <span className="sr-only">Your Company</span>
                 <img
                   className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  src={LOGO2}
                   alt=""
                 />
               </a>
