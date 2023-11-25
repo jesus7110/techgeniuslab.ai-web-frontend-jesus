@@ -7,9 +7,9 @@ import LOGO from './logo_nav_ico.png'
 
 
 const navigation = [
-    { name: 'Home', href: '/error' },
+    { name: 'Home', href: '#' },
     { name: 'About Us', href: '#' },
-    { name: 'Workshop', href: '#' },
+    { name: 'Workshop', href: '/workshop' },
     { name: 'Contact', href: '#' },
   ]
 
@@ -21,7 +21,7 @@ const Navbar = () => {
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">techGeniusLabs</span>
               <img
                 className="h-8 w-auto"
                 src={LOGO}

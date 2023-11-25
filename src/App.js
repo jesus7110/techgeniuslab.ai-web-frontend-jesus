@@ -22,9 +22,8 @@ function App() {
     <Hero/>
     <LogoCloud/>
     <ScrollCard/>
-    <AboutUs/>
-    <Grid/>
     <Stats/>
+    <Grid/>
     <Cta/>
     <Footer/>
     
