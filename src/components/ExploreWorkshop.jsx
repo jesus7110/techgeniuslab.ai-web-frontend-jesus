@@ -16,6 +16,13 @@ import { Fragment, useState } from 'react'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Navbar2 from './Navbar2'
+import h1 from '../assets/1.png'
+import h2 from '../assets/2.png'
+import h3 from '../assets/3.png'
+import h4 from '../assets/4.png'
+import h5 from '../assets/5.png'
+import h6 from '../assets/6.png'
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -31,12 +38,11 @@ export default function Example() {
       <div className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
         <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
           <div className="sm:max-w-lg">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Summer styles are finally here
+            <h1 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
+            Hands-on tech courses that make you future-ready
             </h1>
-            <p className="mt-4 text-xl text-white">
-              This year, our new summer collection will shelter you from the harsh elements of a world that doesn't care
-              if you live or die.
+            <p className="mt-4 text-sm-4 text-white">
+            Tech Genius Labs provides the best hands-on workshop & free online courses for kids (Age 8+) and engineering students. Start learning for free today!
             </p>
           </div>
           <div>
@@ -51,7 +57,7 @@ export default function Example() {
                     <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                         <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
+                          src={h1}
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
