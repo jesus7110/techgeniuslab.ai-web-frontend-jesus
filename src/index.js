@@ -11,6 +11,7 @@ import ExploreWorkshop from './components/ExploreWorkshop';
 import SignUp from './components/SignUp';
 import Register from './components/Register';
 import Contact from './components/Contact';
+import WorkshopCard from './components/WorkshopCard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,6 +24,7 @@ root.render(
         <Route path="/signup" element={<SignUp/>} />
         <Route path="/wregister" element={<Register/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/workshopcard" element={<WorkshopCard/>} />
         <Route path="*" element={<Error/>} />
         
       </Routes>

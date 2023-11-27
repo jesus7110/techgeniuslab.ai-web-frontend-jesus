@@ -13,8 +13,9 @@
   ```
 */
 import { Fragment, useState } from 'react'
-import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
+import { Dialog, Popover, Tab, Transition, RadioGroup} from '@headlessui/react'
 import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { StarIcon } from '@heroicons/react/20/solid'
 import Navbar2 from './Navbar2'
 import h1 from '../assets/1.png'
 import h2 from '../assets/2.png'
@@ -22,7 +23,34 @@ import h3 from '../assets/3.png'
 import h4 from '../assets/4.png'
 import h5 from '../assets/5.png'
 import h6 from '../assets/6.png'
+import WorkshopCard from './WorkshopCard'
+import Footer from './Footer';
 
+
+const product = {
+  name: 'Basic Tee 6-Pack ',
+  price: '$192',
+  rating: 3.9,
+  reviewCount: 117,
+  href: '#',
+  imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-quick-preview-02-detail.jpg',
+  imageAlt: 'Two each of gray, white, and black shirts arranged on table.',
+  colors: [
+    { name: 'White', class: 'bg-white', selectedClass: 'ring-gray-400' },
+    { name: 'Gray', class: 'bg-gray-200', selectedClass: 'ring-gray-400' },
+    { name: 'Black', class: 'bg-gray-900', selectedClass: 'ring-gray-900' },
+  ],
+  sizes: [
+    { name: 'XXS', inStock: true },
+    { name: 'XS', inStock: true },
+    { name: 'S', inStock: true },
+    { name: 'M', inStock: true },
+    { name: 'L', inStock: true },
+    { name: 'XL', inStock: true },
+    { name: 'XXL', inStock: true },
+    { name: 'XXXL', inStock: false },
+  ],
+}
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -30,6 +58,9 @@ function classNames(...classes) {
 
 export default function Example() {
   const [open, setOpen] = useState(false)
+  const [selectedColor, setSelectedColor] = useState(product.colors[0])
+  const [selectedSize, setSelectedSize] = useState(product.sizes[2])
+
 
   return (
     <>
@@ -69,14 +100,14 @@ export default function Example() {
                     <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg"
+                          src={h2}
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg"
+                          src={h3}
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
@@ -88,14 +119,14 @@ export default function Example() {
                     <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg"
+                          src={h4}
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg"
+                          src={h5}
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
@@ -105,17 +136,20 @@ export default function Example() {
                 </div>
               </div>
 
-              <a
-                href="#"
-                className="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
-              >
-                Shop Collection
-              </a>
+
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div className='max-w-8xl bg-white'>
+    
+    <WorkshopCard/>
+
+    </div>
+
+
+    <Footer/>
     </>
   )
 }
