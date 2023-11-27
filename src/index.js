@@ -8,6 +8,9 @@ import Error from './components/Error';
 import SchoolRegistration from './components/SchoolRegistration';
 import Workshop from './components/Workshop';
 import ExploreWorkshop from './components/ExploreWorkshop';
+import SignUp from './components/SignUp';
+import Register from './components/Register';
+import Contact from './components/Contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,8 +18,11 @@ root.render(
        <Routes>
         <Route exact path="/" element={<App/>} />
         <Route exact path="/register" element={<SchoolRegistration/>}/>
-        <Route path="/workshop" element={<Workshop/>} />
+        <Route path="./workshop" element={<Workshop/>} />
         <Route path="/exploreworkshop" element={<ExploreWorkshop/>} />
+        <Route path="/signup" element={<SignUp/>} />
+        <Route path="/wregister" element={<Register/>} />
+        <Route path="/contact" element={<Contact/>} />
         <Route path="*" element={<Error/>} />
         
       </Routes>
