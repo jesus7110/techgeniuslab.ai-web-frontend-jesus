@@ -11,6 +11,7 @@ import ExploreWorkshop from './components/ExploreWorkshop';
 import SignUp from './components/SignUp';
 import Register from './components/Register';
 import Contact from './components/Contact';
+import TestOverview from './components/TestOverview';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,6 +25,7 @@ root.render(
         <Route path="/signup" element={<SignUp/>} />
         <Route path="/wregister" element={<Register/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/testoverview" element={<TestOverview/>} />
         <Route path="*" element={<Error/>} />
         
       </Routes>
