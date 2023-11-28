@@ -90,14 +90,14 @@ const posts = [
       <div className="bg-white py-24 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
          <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-xl font-bold tracking-tight text-gray-900 sm:text-3xl">Explore Our Engaging Workshops</h2>
+            <h2 className="text-xl font-bold tracking-tight text-gray-900 sm:text-3xl">Join Us for an Educational Adventure!</h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
-            Unlocking Creativity and Learning Through IoT and Robotics
+            Explore our workshops and register now to secure your spot. Choose a workshop that aligns with your interests and dive into the world of STEM education.
             </p>
         </div>
             {/*  <h3 className="mt-3 text-xl font-semibold text-gray-900 group-hover:text-gray-600">Build Cool Projects, And prepare for your Future! </h3>
             */}
-          <div className=" mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <div className=" mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             {posts.map((post) => (
               <article key={post.id} className="flex max-w-xl flex-col items-start justify-between">
                 <div className="px-5 group relative">
@@ -215,10 +215,8 @@ const posts = [
   */}
 
       <div id='checkcourses' className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 border-t border-gray-200">
-      <h3 className="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-             Popular Workshops
-      </h3>
-       
+      <h2 className="text-base font-semibold leading-7 text-red-600">Designed for early learners</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Popular Workshops</h2>
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {workshops.map((workshop) => (
             <div key={workshop.id} className="group relative">
@@ -246,7 +244,7 @@ const posts = [
         </div>
       </div>
 
-      <div id='premiumcourses' className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 border-t border-gray-200">
+     {/*<div id='premiumcourses' className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 border-t border-gray-200">
       <h3 className="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
              Premium Courses 
       </h3>
@@ -271,15 +269,15 @@ const posts = [
                   </h3>
                   <p className="mt-1 text-sm text-gray-500">{workshop.age}</p>
                 </div>
-                <p className="text-sm font-medium text-gray-900"> <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
+                <p className="text-sm font-medium text-gray-900"> 
                 {workshop.tag}
-                </span></p>
+               </p>
               </div>
             </div>
           ))}
         </div>
       </div>
-
+          */}
       </>
     )
   }
