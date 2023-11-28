@@ -14,54 +14,44 @@
 */
 import { Fragment, useState } from 'react'
 import { Dialog, Popover, Tab, Transition, RadioGroup} from '@headlessui/react'
-import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import { StarIcon } from '@heroicons/react/20/solid'
+import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon  ,  FingerPrintIcon} from '@heroicons/react/24/outline'
+import { StarIcon,CloudArrowUpIcon, LockClosedIcon, ServerIcon, CheckIcon  } from '@heroicons/react/20/solid'
 import Navbar2 from './Navbar2'
-import h1 from '../assets/1.png'
-import h2 from '../assets/2.png'
-import h3 from '../assets/3.png'
-import h4 from '../assets/4.png'
-import h5 from '../assets/5.png'
-import h6 from '../assets/6.png'
-import WorkshopCard from './WorkshopCard'
+import w11 from '../assets/w11.png'
+import w12 from '../assets/w12.png'
+import w13 from '../assets/w13.png'
+import w14 from '../assets/w14.png'
+import w15 from '../assets/w15.png'
+import w16 from '../assets/w16.png'
+import Workshop from './Workshop';
 import Footer from './Footer';
 
 
-const product = {
-  name: 'Basic Tee 6-Pack ',
-  price: '$192',
-  rating: 3.9,
-  reviewCount: 117,
-  href: '#',
-  imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-quick-preview-02-detail.jpg',
-  imageAlt: 'Two each of gray, white, and black shirts arranged on table.',
-  colors: [
-    { name: 'White', class: 'bg-white', selectedClass: 'ring-gray-400' },
-    { name: 'Gray', class: 'bg-gray-200', selectedClass: 'ring-gray-400' },
-    { name: 'Black', class: 'bg-gray-900', selectedClass: 'ring-gray-900' },
-  ],
-  sizes: [
-    { name: 'XXS', inStock: true },
-    { name: 'XS', inStock: true },
-    { name: 'S', inStock: true },
-    { name: 'M', inStock: true },
-    { name: 'L', inStock: true },
-    { name: 'XL', inStock: true },
-    { name: 'XXL', inStock: true },
-    { name: 'XXXL', inStock: false },
-  ],
-}
+
+
+const features = [
+  {
+    name: 'Hands on workshop',
+    description1:'Robotics, Iot and Electricka',
+    description1:'4 Hours of Training',
+    icon: CheckIcon,
+  },
+  {
+    name: 'Premium Live Classes',
+    description1:'Robotics, Iot and Electricka',
+    description1:'4 Hours of Training',
+    icon: CheckIcon,
+  },
+  
+]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function ExploreWorkshop() {
   const [open, setOpen] = useState(false)
-  const [selectedColor, setSelectedColor] = useState(product.colors[0])
-  const [selectedSize, setSelectedSize] = useState(product.sizes[2])
-
-
+ 
   return (
     <>
     <Navbar2/>
@@ -88,7 +78,7 @@ export default function Example() {
                     <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                         <img
-                          src={h1}
+                          src={w11}
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
@@ -100,14 +90,14 @@ export default function Example() {
                     <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src={h2}
+                          src={w12}
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src={h3}
+                          src={w13}
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
@@ -119,14 +109,14 @@ export default function Example() {
                     <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src={h4}
+                          src={w14}
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src={h5}
+                          src={w15}
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
@@ -142,11 +132,8 @@ export default function Example() {
         </div>
       </div>
     </div>
-    <div className='max-w-8xl bg-white'>
     
-    <WorkshopCard/>
-
-    </div>
+    <Workshop/>
 
 
     <Footer/>
