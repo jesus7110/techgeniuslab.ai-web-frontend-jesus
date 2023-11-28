@@ -49,7 +49,7 @@ const posts = [
       imageSrc: wc1,
       imageAlt: "Workshop image 1",
       tag: 'Beginner',
-      age:'Age: 8+'
+      class: '6th - 8th'
     
     },
     {
@@ -58,7 +58,7 @@ const posts = [
       imageSrc: wc2,
       imageAlt: "Workshop image 1",
       tag: 'Beginner',
-      age:'Age: 8+'
+      class: '6th - 8th'
     
     },
     {
@@ -67,7 +67,7 @@ const posts = [
       imageSrc: wc3,
       imageAlt: "Workshop image 1",
       tag: 'Beginner',
-      age:'Age: 8+'
+      class: '6th - 8th'
     
     },
     {
@@ -76,7 +76,7 @@ const posts = [
       imageSrc: wc4,
       imageAlt: "Workshop image 1",
       tag: 'Beginner',
-      age:'Age: 8+'
+      class: '6th - 8th'
     
     },
     // More workshops...
@@ -216,7 +216,7 @@ const posts = [
 
       <div id='checkcourses' className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 border-t border-gray-200">
       <h2 className="text-base font-semibold leading-7 text-red-600">Designed for early learners</h2>
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Popular Workshops</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-2xl">Popular Workshops</h2>
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {workshops.map((workshop) => (
             <div key={workshop.id} className="group relative">
@@ -235,7 +235,7 @@ const posts = [
                       {workshop.name}
                     
                   </h3>
-                  <p className="mt-1 text-sm text-gray-500">{workshop.age}</p>
+                  <p className="mt-1 text-sm text-gray-500">Class: {workshop.class}</p>
                 </div>
                 <p className="text-sm font-medium text-gray-900">{workshop.tag}</p>
               </div>
@@ -278,6 +278,81 @@ const posts = [
         </div>
       </div>
           */}
+
+
+
+
+      <div id='checkcourses' className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 border-t border-gray-200">
+      <div className="mx-auto mb-20 max-w-5xl lg:text-center">
+          <h2 className="text-base font-semibold leading-7 text-red-600">Unlock Exclusive Learning Opportunities</h2>
+          <p className="mt-2 text-xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+          We believe in the power of continuous learning!
+          </p>
+
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+          As a special launching offer, every student who attends any of our offline workshops will receive a complimentary 3-month Prime Membership. This membership grants you access to a wealth of learning resources, including:
+          
+          <div className="grid grid-cols-1 sm:mt-2 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+            <ul role="list" className="text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
+              
+              <li className="flex gap-x-3">
+                <CheckIcon className="h-6 w-5 flex-none text-red-700" aria-hidden="true" />
+                Live and Recorded Classes: Participate in live classes and catch up on recorded sessions at your own pace.
+              </li>
+                
+                <li className="flex gap-x-3">
+                  <CheckIcon className="h-6 w-5 flex-none text-red-700" aria-hidden="true" />
+                  ,dsm.,cs.msdkmlk
+                </li>
+
+              </ul>
+
+              <ul role="list" className="text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
+              
+              <li className="flex gap-x-3">
+                <CheckIcon className="h-6 w-5 flex-none text-red-700" aria-hidden="true" />
+                lakfnlnflanflanlkfn
+              </li>
+                
+                <li className="flex gap-x-3">
+                  <CheckIcon className="h-6 w-5 flex-none text-red-700" aria-hidden="true" />
+                  ,dsm.,cs.msdkmlk
+                </li>
+
+              </ul>
+        </div>
+          </p>  
+        </div>
+
+
+      <h2 className="text-base font-semibold leading-7 text-red-600">Live Mentoring</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-2xl">Premium Courses</h2>
+        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+          {workshops.map((workshop) => (
+            <div key={workshop.id} className="group relative">
+              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                <img
+                  src={workshop.imageSrc}
+                  alt={workshop.imageAlt}
+                  className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                />
+              </div>
+              <div className="mt-4 flex justify-between">
+                <div>
+                  <h3 className="text-sm text-gray-700">
+                    
+                      <span aria-hidden="true" className="absolute inset-0" />
+                      {workshop.name}
+                    
+                  </h3>
+                  <p className="mt-1 text-sm text-gray-500">Class: {workshop.class}</p>
+                </div>
+                <p className="text-sm font-medium text-gray-900">{workshop.tag}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
       </>
     )
   }
