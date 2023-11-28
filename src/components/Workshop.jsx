@@ -40,7 +40,7 @@ const posts = [
     {
       id: 1,
       title: 'Begin with Arduino',
-      
+
     }
   ]
   
@@ -102,26 +102,17 @@ const posts = [
             ))}
           </div>            
         </div>
+      </div>
+  
 
-
-       
+      <div className='mx-auto max-w-7xl px-6 lg:px-8 py-20 border-t border-gray-200'>
+        <div className="mx-auto max-w-2xl lg:mx-0">
+            <h3 className="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+              Customised Workshops for you 
+            </h3>
+        </div>
 
         
-      </div>
-
-      <div className='mx-auto max-w-7xl px-6 lg:px-8 py-20 border-t border-gray-200'>
-        <div className="mx-auto max-w-2xl lg:mx-0">
-            <h3 className="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">Customised Workshops for you </h3>
-            
-        </div>
-      </div>
-
-
-      <div className='mx-auto max-w-7xl px-6 lg:px-8 py-20 border-t border-gray-200'>
-        <div className="mx-auto max-w-2xl lg:mx-0">
-            <h3 className="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">Customised Workshops for you </h3>
-            
-        </div>
       </div>
 
       
