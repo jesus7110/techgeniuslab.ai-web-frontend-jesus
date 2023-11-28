@@ -41,25 +41,49 @@ const posts = [
   
   ]
 
-  const workshop = [
-    {
-      id: 1,
-      title: 'Begin with Arduino',
 
-    }
-  ]
-
-  const products = [
+  const workshops = [
     {
       id: 1,
       name: 'Begin with Arduino',
       href: '#',
       imageSrc: wc1,
-      imageAlt: "Front of men's Basic Tee in black.",
-      price: '$35',
-      color: 'Black',
+      imageAlt: "Workshop image 1",
+      tag: 'Beginner',
+      age:'Age: 8+'
+    
     },
-    // More products...
+    {
+      id: 2,
+      name: 'Begin with Arduino',
+      href: '#',
+      imageSrc: wc2,
+      imageAlt: "Workshop image 1",
+      tag: 'Beginner',
+      age:'Age: 8+'
+    
+    },
+    {
+      id: 3,
+      name: 'Begin with Arduino',
+      href: '#',
+      imageSrc: wc1,
+      imageAlt: "Workshop image 1",
+      tag: 'Beginner',
+      age:'Age: 8+'
+    
+    },
+    {
+      id: 4,
+      name: 'Begin with Arduino',
+      href: '#',
+      imageSrc: wc1,
+      imageAlt: "Workshop image 1",
+      tag: 'Beginner',
+      age:'Age: 8+'
+    
+    },
+    // More workshops...
   ]
   
   
@@ -200,26 +224,26 @@ const posts = [
       </h3>
        
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-          {products.map((product) => (
-            <div key={product.id} className="group relative">
+          {workshops.map((workshop) => (
+            <div key={workshop.id} className="group relative">
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
                 <img
-                  src={product.imageSrc}
-                  alt={product.imageAlt}
+                  src={workshop.imageSrc}
+                  alt={workshop.imageAlt}
                   className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                 />
               </div>
               <div className="mt-4 flex justify-between">
                 <div>
                   <h3 className="text-sm text-gray-700">
-                    <a href={product.href}>
+                    <a href={workshop.href}>
                       <span aria-hidden="true" className="absolute inset-0" />
-                      {product.name}
+                      {workshop.name}
                     </a>
                   </h3>
-                  <p className="mt-1 text-sm text-gray-500">{product.color}</p>
+                  <p className="mt-1 text-sm text-gray-500">{workshop.age}</p>
                 </div>
-                <p className="text-sm font-medium text-gray-900">{product.price}</p>
+                <p className="text-sm font-medium text-gray-900">{workshop.tag}</p>
               </div>
             </div>
           ))}
