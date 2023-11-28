@@ -338,7 +338,7 @@ const posts = [
 
      
     
-        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 ">
           {workshops.map((workshop) => (
             <div key={workshop.id} className="group relative">
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
@@ -365,9 +365,9 @@ const posts = [
         </div>
       </div>
 
-      <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl sm:text-center">
+      <div className="bg-white py-2 sm:py-1 mb-20">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8  border-t border-gray-200">
+        <div className="mx-auto max-w-3xl sm:text-center sm:py-16">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Bring STEM Education to Your School!</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
           Unlock a world of possibilities for your students through our tailored STEM workshops. Collaborate with TechGeniusLabs to bring innovative learning experiences to your classrooms.
@@ -381,7 +381,7 @@ const posts = [
               repellendus etur quidem assumenda.
             </p>
             <div className="mt-10 flex items-center gap-x-4">
-              <h4 className="flex-none text-sm font-semibold leading-6 text-red-600">Perks of Partnering with TechGeniusLabs</h4>
+              <h4 className="flex-none text-sm font-semibold leading-6 text-red-700">Perks of Partnering with TechGeniusLabs</h4>
               <div className="h-px flex-auto bg-gray-100" />
             </div>
             <ul
@@ -390,7 +390,7 @@ const posts = [
             >
               {includedFeatures.map((feature) => (
                 <li key={feature} className="flex gap-x-3">
-                  <CheckIcon className="h-6 w-5 flex-none text-red-600" aria-hidden="true" />
+                  <CheckIcon className="h-6 w-5 flex-none text-red-700" aria-hidden="true" />
                   {feature}
                 </li>
               ))}
@@ -406,7 +406,7 @@ const posts = [
                 </p>
                 <a
                   href="#"
-                  className="mt-10 block w-full rounded-md bg-red-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="mt-10 block w-full rounded-md bg-red-700 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Request Workshop
                 </a>
