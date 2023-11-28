@@ -89,7 +89,7 @@ const posts = [
       <>
       <div className="bg-white py-24 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-         <div className="mx-auto max-w-2xl lg:mx-0">
+         <div className="mx-auto max-w-3xl lg:mx-0">
             <h2 className="text-xl font-bold tracking-tight text-gray-900 sm:text-3xl">Join Us for an Educational Adventure!</h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
             Explore our workshops and register now to secure your spot. Choose a workshop that aligns with your interests and dive into the world of STEM education.
