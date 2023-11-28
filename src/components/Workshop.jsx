@@ -1,5 +1,5 @@
 import C1 from '../assets/c1.png'
-import { CheckIcon } from '@heroicons/react/20/solid'
+import { CheckIcon,AdjustmentsHorizontalIcon } from '@heroicons/react/20/solid'
 import wc1 from '../assets/wc1.png'
 import wc2 from '../assets/wc2.png'
 import wc3 from '../assets/wc3.png'
@@ -83,7 +83,13 @@ const posts = [
   ]
   
   
-  
+  const includedFeatures = [
+    'Exclusive Discounts for School Partners',
+    'Dedicated Support for Workshop Planning and Execution',
+    'Priority Scheduling for Workshops and Events',
+    'Recognition as a TechGeniusLabs Partner School',
+  ]
+
   export default function Workshop() {
     return (
       <>
@@ -292,41 +298,46 @@ const posts = [
           <p className="mt-6 text-lg leading-8 text-gray-600">
           As a special launching offer, every student who attends any of our offline workshops will receive a complimentary 3-month Prime Membership. This membership grants you access to a wealth of learning resources, including:
           
-          <div className="grid grid-cols-1 sm:mt-2 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+          <div className="grid grid-cols-1  sm:mt-2 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <ul role="list" className="text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
               
-              <li className="flex gap-x-3">
+              <li className="flex gap-x-3 font-semibold">
                 <CheckIcon className="h-6 w-5 flex-none text-red-700" aria-hidden="true" />
-                Live and Recorded Classes: Participate in live classes and catch up on recorded sessions at your own pace.
+                Live and Recorded Classes.
               </li>
                 
-                <li className="flex gap-x-3">
+                <li className="flex gap-x-3 font-semibold">
                   <CheckIcon className="h-6 w-5 flex-none text-red-700" aria-hidden="true" />
-                  ,dsm.,cs.msdkmlk
-                </li>
+                  Project Building Workshops
+                  </li>
 
               </ul>
 
               <ul role="list" className="text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
               
-              <li className="flex gap-x-3">
+              <li className="flex gap-x-3 font-semibold">
                 <CheckIcon className="h-6 w-5 flex-none text-red-700" aria-hidden="true" />
-                lakfnlnflanflanlkfn
-              </li>
+                Community Forums</li>
                 
-                <li className="flex gap-x-3">
+                <li className="flex gap-x-3 font-semibold">
                   <CheckIcon className="h-6 w-5 flex-none text-red-700" aria-hidden="true" />
-                  ,dsm.,cs.msdkmlk
-                </li>
+                  Additional Learning Materials
+                  </li>
 
               </ul>
         </div>
           </p>  
         </div>
 
+        <h2 className="text-base font-semibold leading-7 text-red-600">Live Mentoring</h2>
+        <div className='flex items-center text-3xl font-bold tracking-tight text-gray-900 sm:text-2xl'>
+           Check Out the Premium Courses
+        </div>
 
-      <h2 className="text-base font-semibold leading-7 text-red-600">Live Mentoring</h2>
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-2xl">Premium Courses</h2>
+
+
+     
+    
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {workshops.map((workshop) => (
             <div key={workshop.id} className="group relative">
@@ -353,6 +364,64 @@ const posts = [
           ))}
         </div>
       </div>
+
+      <div className="bg-white py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl sm:text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Bring STEM Education to Your School!</h2>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+          Unlock a world of possibilities for your students through our tailored STEM workshops. Collaborate with TechGeniusLabs to bring innovative learning experiences to your classrooms.
+          </p>
+        </div>
+        <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+          <div className="p-8 sm:p-10 lg:flex-auto">
+            <h3 className="text-2xl font-bold tracking-tight text-gray-900">Lifetime membership</h3>
+            <p className="mt-6 text-base leading-7 text-gray-600">
+              Lorem ipsum dolor sit amet consect etur adipisicing elit. Itaque amet indis perferendis blanditiis
+              repellendus etur quidem assumenda.
+            </p>
+            <div className="mt-10 flex items-center gap-x-4">
+              <h4 className="flex-none text-sm font-semibold leading-6 text-red-600">Perks of Partnering with TechGeniusLabs</h4>
+              <div className="h-px flex-auto bg-gray-100" />
+            </div>
+            <ul
+              role="list"
+              className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6"
+            >
+              {includedFeatures.map((feature) => (
+                <li key={feature} className="flex gap-x-3">
+                  <CheckIcon className="h-6 w-5 flex-none text-red-600" aria-hidden="true" />
+                  {feature}
+                </li>
+              ))}
+            </ul>
+
+            
+          </div>
+          <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+            <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+              <div className="mx-auto max-w-xs px-8">
+                <p className="mt-6 flex items-baseline justify-center gap-x-2">
+                  <span className="text-sm font-semibold leading-6 tracking-wide text-gray-600">Ready to Transform Your School's Learning Experience !!</span>
+                </p>
+                <a
+                  href="#"
+                  className="mt-10 block w-full rounded-md bg-red-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Request Workshop
+                </a>
+                <p className="mt-6 text-sm leading-5 text-gray-600">
+               For more info Call us at +917224814174
+                </p>
+                <p className="mt-6 text-sm leading-5 text-gray-600">
+               Or email at support@techgeniuslabs.in
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
       </>
     )
   }
