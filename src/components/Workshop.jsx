@@ -1,6 +1,9 @@
 import C1 from '../assets/c1.png'
 import { CheckIcon } from '@heroicons/react/20/solid'
-import 
+import wc1 from '../assets/wc1.png'
+import wc2 from '../assets/wc2.png'
+import wc3 from '../assets/wc3.png'
+import wc4 from '../assets/wc4.png'
 
 const posts = [
     {
@@ -49,9 +52,9 @@ const posts = [
   const products = [
     {
       id: 1,
-      name: 'Basic Tee',
+      name: 'Begin with Arduino',
       href: '#',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+      imageSrc: wc1,
       imageAlt: "Front of men's Basic Tee in black.",
       price: '$35',
       color: 'Black',
