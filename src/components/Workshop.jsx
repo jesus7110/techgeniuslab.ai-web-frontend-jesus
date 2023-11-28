@@ -46,7 +46,6 @@ const posts = [
     {
       id: 1,
       name: 'Begin with Arduino',
-      href: '#',
       imageSrc: wc1,
       imageAlt: "Workshop image 1",
       tag: 'Beginner',
@@ -56,7 +55,6 @@ const posts = [
     {
       id: 2,
       name: 'Begin with Arduino',
-      href: '#',
       imageSrc: wc2,
       imageAlt: "Workshop image 1",
       tag: 'Beginner',
@@ -66,8 +64,7 @@ const posts = [
     {
       id: 3,
       name: 'Begin with Arduino',
-      href: '#',
-      imageSrc: wc1,
+      imageSrc: wc3,
       imageAlt: "Workshop image 1",
       tag: 'Beginner',
       age:'Age: 8+'
@@ -76,8 +73,7 @@ const posts = [
     {
       id: 4,
       name: 'Begin with Arduino',
-      href: '#',
-      imageSrc: wc1,
+      imageSrc: wc4,
       imageAlt: "Workshop image 1",
       tag: 'Beginner',
       age:'Age: 8+'
@@ -138,7 +134,7 @@ const posts = [
 
                 </div>
                 <div className="px-5 relative mt-8 flex items-center gap-x-4">
-                <a href="#" className="rounded-md bg-red-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                <a href="#checkworkshop" className="rounded-md bg-red-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
               {post.button}
             </a>
                 </div>
@@ -218,9 +214,9 @@ const posts = [
       </div>
   */}
 
-      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 border-t border-gray-200">
+      <div id='checkcourses' className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 border-t border-gray-200">
       <h3 className="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-              Customised Workshops for you 
+             Popular Workshops
       </h3>
        
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
@@ -236,14 +232,48 @@ const posts = [
               <div className="mt-4 flex justify-between">
                 <div>
                   <h3 className="text-sm text-gray-700">
-                    <a href={workshop.href}>
+                    
                       <span aria-hidden="true" className="absolute inset-0" />
                       {workshop.name}
-                    </a>
+                    
                   </h3>
                   <p className="mt-1 text-sm text-gray-500">{workshop.age}</p>
                 </div>
                 <p className="text-sm font-medium text-gray-900">{workshop.tag}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div id='premiumcourses' className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 border-t border-gray-200">
+      <h3 className="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+             Premium Courses 
+      </h3>
+       
+        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+          {workshops.map((workshop) => (
+            <div key={workshop.id} className="group relative">
+              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                <img
+                  src={workshop.imageSrc}
+                  alt={workshop.imageAlt}
+                  className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                />
+              </div>
+              <div className="mt-4 flex justify-between">
+                <div>
+                  <h3 className="text-sm text-gray-700">
+                    
+                      <span aria-hidden="true" className="absolute inset-0" />
+                      {workshop.name}
+                    
+                  </h3>
+                  <p className="mt-1 text-sm text-gray-500">{workshop.age}</p>
+                </div>
+                <p className="text-sm font-medium text-gray-900"> <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
+                {workshop.tag}
+                </span></p>
               </div>
             </div>
           ))}
