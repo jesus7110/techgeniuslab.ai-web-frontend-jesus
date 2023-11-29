@@ -17,7 +17,7 @@ function classNames(...classes) {
 export default function RequestWorkshop() {
   const [agreed, setAgreed] = useState(false)
   const [request, setRequest] = useState (
-    
+    school-name,spoc-name, address, email, 
   )
 
   const handleSubmit = async (event) => {
