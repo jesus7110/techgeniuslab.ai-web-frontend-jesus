@@ -14,7 +14,7 @@ const firebaseConfig = {
   messagingSenderId: "978001921050",
   appId: "1:978001921050:web:790d56e2134c01a1ffbda3",
   measurementId: "G-6S59N681QV",
-  databseURL:"https://console.firebase.google.com/u/0/project/ai-mbot/database/ai-mbot-default-rtdb/data/~2F"
+  databseURL:"https://ai-mbot-default-rtdb.firebaseio.com"
 };
 
 // Initialize Firebase
