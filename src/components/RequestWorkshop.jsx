@@ -142,6 +142,13 @@ export default function RequestWorkshop() {
               />
             </div>
         </div>*/}
+
+
+            <div className="mt-10 flex items-center gap-x-4">
+              <h4 className="flex-none text-sm font-semibold leading-6 text-red-700">Perks of Partnering with TechGeniusLabs</h4>
+              <div className="h-px flex-auto bg-gray-100" />
+            </div>
+
           <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
             <div className="flex h-6 items-center">
               <Switch
@@ -164,7 +171,7 @@ export default function RequestWorkshop() {
             </div>
             <Switch.Label className="text-sm leading-6 text-gray-600">
               By selecting this, you agree to our{' '}
-              <a href="#" className="font-semibold text-indigo-600">
+              <a href="#" className="font-semibold text-gray-600">
                 privacy&nbsp;policy
               </a>
               .
@@ -174,7 +181,7 @@ export default function RequestWorkshop() {
         <div className="mt-10">
           <button
             type="submit"
-            className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="block w-full rounded-md bg-gray-900 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
            Submit Response
           </button>
