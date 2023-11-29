@@ -9,12 +9,6 @@ import h4 from '../assets/4.png'
 import h5 from '../assets/5.png'
 import h6 from '../assets/6.png'
 
-const navigation = [
-    { name: 'Home', href: '#' },
-    { name: 'Workshop', href: '#' },
-    { name: 'Marketplace', href: '#' },
-    { name: 'Company', href: '#' },
-  ]
 
 
 const Hero = () => {
@@ -101,7 +95,7 @@ const Hero = () => {
               </div>
 
               <a
-                href="/workshop"
+                href="/exploreworkshop"
                 className="inline-block rounded-md border border-transparent bg-red-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
               >
                 Explore Workshop

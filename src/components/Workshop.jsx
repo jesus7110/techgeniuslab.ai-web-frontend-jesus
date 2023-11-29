@@ -5,6 +5,7 @@ import wc2 from '../assets/wc2.png'
 import wc3 from '../assets/wc3.png'
 import wc4 from '../assets/wc4.png'
 import banner from '../assets/appbanner.png'
+import playButton from '../assets/play_button.png'
 
 const posts = [
     {
@@ -375,12 +376,17 @@ const posts = [
         />
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Work with us</h2>
-          <p className="mt-6 text-lg leading-8 text-gray-300">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-            fugiat veniam occaecat fugiat aliqua.
+        <div className="mx-auto max-w-xl lg:mx-0">
+          <h2 className="text-2xl font-bold tracking-tight text-white sm:text-5xl">Our Mobile App is Launching Soon</h2>
+          <p className="mt-6 text-md-4 leading-8 text-gray-100">
+          Access learning on the go with our new mobile application. Stay tuned for an enhanced and seamless learning experience right at your fingertips.
           </p>
+
+          <img
+        src={playButton} className='w-32 h-32'
+        alt=""
+        
+      />
         </div>
       </div>
     </div>
