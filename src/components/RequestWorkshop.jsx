@@ -4,6 +4,7 @@ import { Switch } from '@headlessui/react'
 
 import { firestore } from '../config/FirebaseConfig';
 import {getDatabase} from "firebase/database";
+import { setUserId } from 'firebase/analytics';
 
 
 
@@ -24,7 +25,19 @@ export default function RequestWorkshop() {
     phone:'', 
     expectedDateIn:'', 
     expectedDateOut:'',
+    expectedParticipants:'',
+    classGroup:'',
+    how:'',
+    comment:'',
+
   })
+
+var name,value
+  const data = (e) => {
+    name = e.target.name;
+    value = e.target.value;
+    setRequest({...request, [name]:value});
+  }
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -197,7 +210,7 @@ export default function RequestWorkshop() {
 
         
             
-            <label htmlFor="School-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="expectedDateIn" className="block text-sm font-semibold leading-6 text-gray-900">
               Choose Estimated Dates
             </label>
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">  
@@ -217,8 +230,8 @@ export default function RequestWorkshop() {
             <div className="mt-2.5">
               <input
                 type="date"
-                name="expected-date-out"
-                id="expected-date-out"
+                name="expectedDateOut"
+                id="expectedDateOut"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
            
@@ -228,14 +241,14 @@ export default function RequestWorkshop() {
         
 
         <div className='mt-8'>
-            <label htmlFor="expected-participants" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="expectedParticipants" className="block text-sm font-semibold leading-6 text-gray-900">
               Expected Number of Participants
             </label>
             <div className="mt-2.5 mb-8">
               <input
                 type="number"
-                name="expected-participants"
-                id="expected-participants"
+                name="expectedParticipants"
+                id="expectedParticipants"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
@@ -243,14 +256,14 @@ export default function RequestWorkshop() {
 
 
         <div className='mt-8'>
-            <label htmlFor="class-group" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="classGroup" className="block text-sm font-semibold leading-6 text-gray-900">
               Class Groups
             </label>
             <div className="mt-2.5 mb-8">
               <select
                 type="text"
-                name="class-group"
-                id="class-group"
+                name="classGroup"
+                id="classGroup"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               >
                 <option> Select</option>
