@@ -20,6 +20,7 @@ root.render(
         <Route exact path="/" element={<App/>} />
         {/*<Route exact path="/register" element={<SchoolRegistration/>}/>*/}
         <Route path="/exploreworkshop" element={<ExploreWorkshop/>} />
+        <Route path="/requestworkshop" element={<RequestWorkshop/>} />
         <Route path="/signup" element={<SignUp/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/testoverview" element={<TestOverview/>} />

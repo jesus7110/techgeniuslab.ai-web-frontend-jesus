@@ -51,6 +51,7 @@ const posts = [
       b3: 'Team Challenges and Fun Activities',
       b4: 'Q&A Session with Experienced Instructors',
   button:'Request Workshop',
+  href: '/requestworkshop',
   icon: CheckIcon,
   },
 
@@ -68,6 +69,7 @@ const posts = [
         b4: 'Q&A Session with Experienced Instructors',
     
     button:'Join Premium',
+    href: '/requestworkshop',
     icon: CheckIcon,
     },
 
@@ -273,7 +275,7 @@ export default function ExploreWorkshop() {
 
                 </div>
                 <div className="px-5 relative mt-8 flex items-center gap-x-4">
-                <a href="#checkworkshop" className="rounded-md bg-red-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                <a href={post.href} className="rounded-md bg-red-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
               {post.button}
             </a>
                 </div>
