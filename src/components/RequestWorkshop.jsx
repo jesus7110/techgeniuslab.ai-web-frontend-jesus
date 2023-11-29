@@ -1,29 +1,38 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Switch } from '@headlessui/react'
 
-import { firestore } from '../config/FirebaseConfig'
+import { firestore } from '../config/FirebaseConfig';
+import {getDatabase} from "firebase/database";
+
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+
+
+
 export default function RequestWorkshop() {
   const [agreed, setAgreed] = useState(false)
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const formData = {
+        //Extract form data
+    };
+    
+    try {
+        await firestore.collection('responses').add(formData);
+        console.log('Form response stored in Database! ');
+    }
+  }
+
+
+
+
 
   return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
@@ -45,7 +54,7 @@ export default function RequestWorkshop() {
           Get Customised Workshop planned for your School
         </p>
       </div>
-      <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+      <form onSubmit={handleSubmit} method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
          <div className="mt-8 mb-8 flex items-center gap-x-4">
               <h4 className="flex-none text-sm font-semibold leading-6 text-indigo-900">School's Info</h4>
               <div className="h-px flex-auto bg-gray-300" />
