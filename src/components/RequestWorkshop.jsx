@@ -16,9 +16,15 @@ function classNames(...classes) {
 
 export default function RequestWorkshop() {
   const [agreed, setAgreed] = useState(false)
-  const [request, setRequest] = useState (
-    school-name,spoc-name, address, email, 
-  )
+  const [request, setRequest] = useState ({
+    school:'',
+    spoc:'', 
+    address:'', 
+    email:'', 
+    phone:'', 
+    expectedDateIn:'', 
+    expectedDateOut:'',
+  })
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -85,27 +91,27 @@ export default function RequestWorkshop() {
         </div>
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">         
           <div>
-            <label htmlFor="School-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="School" className="block text-sm font-semibold leading-6 text-gray-900">
               School name
             </label>
             <div className="mt-2.5">
               <input
                 type="text"
-                name="school-name"
-                id="school-name"
+                name="school"
+                id="school"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
           <div>
-            <label htmlFor="spoc-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="spoc" className="block text-sm font-semibold leading-6 text-gray-900">
               School SPOC name
             </label>
             <div className="mt-2.5">
               <input
                 type="text"
-                name="spoc-name"
-                id="spoc-name"
+                name="spoc"
+                id="spoc"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
@@ -138,7 +144,7 @@ export default function RequestWorkshop() {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="phone" className="block text-sm font-semibold leading-6 text-gray-900">
               Phone number
             </label>
             <div className="relative mt-2.5">
@@ -160,8 +166,8 @@ export default function RequestWorkshop() {
               </div>
               <input
                 type="tel"
-                name="phone-number"
-                id="phone-number"
+                name="phone"
+                id="phone"
                 autoComplete="tel"
                 className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -199,8 +205,8 @@ export default function RequestWorkshop() {
             <div className="mt-2.5">
               <input
                 type="date"
-                name="expected-date-in"
-                id="expected-date-in"
+                name="expectedDateIn"
+                id="expectedDateIn"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
