@@ -44,7 +44,11 @@ export default function RequestWorkshop() {
         </p>
       </div>
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
-        <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+         <div className="mt-8 mb-8 flex items-center gap-x-4">
+              <h4 className="flex-none text-sm font-semibold leading-6 text-indigo-900">School's Info</h4>
+              <div className="h-px flex-auto bg-gray-300" />
+        </div>
+        <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">         
           <div>
             <label htmlFor="School-name" className="block text-sm font-semibold leading-6 text-gray-900">
               School name
@@ -143,11 +147,84 @@ export default function RequestWorkshop() {
             </div>
         </div>*/}
 
+        </div>
 
-            <div className="mt-10 flex items-center gap-x-4">
-              <h4 className="flex-none text-sm font-semibold leading-6 text-red-700">Perks of Partnering with TechGeniusLabs</h4>
-              <div className="h-px flex-auto bg-gray-100" />
+        <div className="mt-8 mb-8 flex items-center gap-x-4">
+              <h4 className="flex-none text-sm font-semibold leading-6 text-indigo-900">Workshop Details</h4>
+              <div className="h-px w-full bg-gray-300" />
+        </div>
+
+        
+            
+            <label htmlFor="School-name" className="block text-sm font-semibold leading-6 text-gray-900">
+              Choose Estimated Dates
+            </label>
+            <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">  
+            <div>
+            <div className="mt-2.5">
+              <input
+                type="date"
+                name="expected-date-in"
+                id="expected-date-in"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              />
             </div>
+
+            </div>
+
+            
+            <div className="mt-2.5">
+              <input
+                type="date"
+                name="expected-date-out"
+                id="expected-date-out"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              />
+           
+            </div>
+        </div>
+
+        
+
+        <div className='mt-8'>
+            <label htmlFor="expected-date-out" className="block text-sm font-semibold leading-6 text-gray-900">
+              Expected Number of Participants
+            </label>
+            <div className="mt-2.5 mb-8">
+              <input
+                type="text"
+                name="expected-participants"
+                id="expected-participants"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+        </div>
+
+
+        <div className='mt-8'>
+            <label htmlFor="expected-date-out" className="block text-sm font-semibold leading-6 text-gray-900">
+              Class Groups
+            </label>
+            <div className="mt-2.5 mb-8">
+              <select
+                type="text"
+                name="class-group"
+                id="class-group"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              >
+
+                <option> Class 6th - 8th </option>
+                <option> Class 9th - 10th </option>
+                <option> Class 11th - 12th </option>
+
+
+
+              </select>
+            </div>
+        </div>
+
+
+
 
           <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
             <div className="flex h-6 items-center">
@@ -177,7 +254,7 @@ export default function RequestWorkshop() {
               .
             </Switch.Label>
           </Switch.Group>
-        </div>
+        
         <div className="mt-10">
           <button
             type="submit"
