@@ -20,15 +20,36 @@ export default function RequestWorkshop() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const formData = {
-        //Extract form data
-    };
+    const { } = NewRequest;
+
+    const options = {
+        method: 'POST',
+        headers: {
+            'Content-Type':'application/json'
+        },
+        body: JSON.stringify({
+            Name, Email, Number, message
+        })
+    }
+        const res = fetch(
+            '',
+            options
+        )
+        if(res){
+            alert("Data strored")
+        }
+        else{
+            alert("error occured")
+        }
+    }
     
-    try {
+   {/* try {
         await firestore.collection('responses').add(formData);
         console.log('Form response stored in Database! ');
-    }
-  }
+    }catch (error) {
+        console.error('Error storing form response : ', error);
+    }*/}
+  
 
 
 
