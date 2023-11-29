@@ -6,7 +6,7 @@ import 'firebase/firestore';
 // Replace with your Firebase project config
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_apiKey,
-  authDomain: process,
+  authDomain: process.env.,
   projectId: 'YOUR_PROJECT_ID',
   storageBucket: 'YOUR_STORAGE_BUCKET',
   messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
