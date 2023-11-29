@@ -16,6 +16,9 @@ function classNames(...classes) {
 
 export default function RequestWorkshop() {
   const [agreed, setAgreed] = useState(false)
+  const [request, setRequest] = useState (
+    
+  )
 
   const handleSubmit = async (event) => {
     event.preventDefault();
