@@ -33,9 +33,9 @@ export default function Footer() {
                 <PencilIcon className="h-6 w-6 text-white" aria-hidden="true" />
               </div>
               <dt className="mt-4 font-semibold text-white"><a href="/" >Workshops</a></dt>
-              <dt className="mt-4 font-semibold text-white"><a href="/" >School Workshops</a></dt>
-              <dt className="mt-4 font-semibold text-white"><a href="/" >Workshop Schedule</a></dt>              
-              <dt className="mt-4 font-semibold text-white"><a href="/" >Free Courses</a></dt>
+              <dt className="mt-4 font-semibold text-white"><a href="/exploreworkshop" >School Workshops</a></dt>
+              <dt className="mt-4 font-semibold text-white"><a href="/requestworkshop" >Workshop Schedule</a></dt>              
+              <dt className="mt-4 font-semibold text-white"><a href="/exploreworkshop#checkcourses" >Free Courses</a></dt>
             </div>
 
             <div className="flex flex-col items-start">

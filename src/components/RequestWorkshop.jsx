@@ -30,7 +30,7 @@ export default function RequestWorkshop() {
         aria-hidden="true"
       >
         <div
-          className="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
+          className="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#111827] to-[#991b1b] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
           style={{
             clipPath:
               'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
@@ -187,12 +187,12 @@ export default function RequestWorkshop() {
         
 
         <div className='mt-8'>
-            <label htmlFor="expected-date-out" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="expected-participants" className="block text-sm font-semibold leading-6 text-gray-900">
               Expected Number of Participants
             </label>
             <div className="mt-2.5 mb-8">
               <input
-                type="text"
+                type="number"
                 name="expected-participants"
                 id="expected-participants"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -202,7 +202,7 @@ export default function RequestWorkshop() {
 
 
         <div className='mt-8'>
-            <label htmlFor="expected-date-out" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="class-group" className="block text-sm font-semibold leading-6 text-gray-900">
               Class Groups
             </label>
             <div className="mt-2.5 mb-8">
@@ -212,7 +212,7 @@ export default function RequestWorkshop() {
                 id="class-group"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               >
-
+                <option> Select</option>
                 <option> Class 6th - 8th </option>
                 <option> Class 9th - 10th </option>
                 <option> Class 11th - 12th </option>
@@ -223,9 +223,46 @@ export default function RequestWorkshop() {
             </div>
         </div>
 
+        <div className="mt-8 mb-8 flex items-center gap-x-4">
+              <h4 className="flex-none text-sm font-semibold leading-6 text-indigo-900">More Details</h4>
+              <div className="h-px w-full bg-gray-300" />
+        </div>
 
 
+        <div className='mt-8'>
+            <label htmlFor="how" className="block text-sm font-semibold leading-6 text-gray-900">
+              How did your hear about us ?
+            </label>
+            <div className="mt-2.5 mb-8">
+              <select
+                type="text"
+                name="how"
+                id="how"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              >
+                 <option> Select</option>
+                <option> Friends, Colleague, Another School </option>
+                <option> Website, Online Advertisements</option>
+                <option> Event or Conference </option>
+                <option> Other, Not Mentioned</option>
 
+                </select>
+            </div>
+        </div>
+
+        <div className='mt-8'>
+            <label htmlFor="comment" className="block text-sm font-semibold leading-6 text-gray-900">
+              Any Special requirements or comment
+            </label>
+            <div className="mt-2.5 mb-8">
+              <input
+                type="text"
+                name="comment"
+                id="comment"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+        </div>
           <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
             <div className="flex h-6 items-center">
               <Switch
