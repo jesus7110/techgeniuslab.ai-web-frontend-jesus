@@ -24,7 +24,7 @@ const Navbar = () => {
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">techGeniusLabs</span>
               <img
-                className="h-8 w-auto"
+                className="h-10 w-auto"
                 src={LOGO}
                 alt=""
               />

@@ -122,7 +122,7 @@ const includedFeatures = [
   'Exclusive Discounts for School Partners',
   'Dedicated Support for Workshop Planning and Execution',
   'Priority Scheduling for Workshops and Events',
-  'Recognition as a TechGeniusLabs Partner School',
+  'Recognition as a TechStudioLabs Partner School',
 ]
 const features = [
   {
@@ -158,7 +158,7 @@ export default function ExploreWorkshop() {
             Hands-on tech courses that make you future-ready
             </h1>
             <p className="mt-4 text-sm-4 text-white">
-            Tech Genius Labs provides the best hands-on workshop & free online courses for kids (Age 8+) and engineering students. Start learning for free today!
+            Tech Studio Labs provides the best hands-on workshop & free online courses for kids (Age 8+) and engineering students. Start learning for free today!
             </p>
           </div>
           <div>
@@ -520,7 +520,7 @@ export default function ExploreWorkshop() {
         <div className="mx-auto max-w-3xl sm:text-center sm:py-16">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Bring STEM Education to Your School!</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-          Unlock a world of possibilities for your students through our tailored STEM workshops. Collaborate with TechGeniusLabs to bring innovative learning experiences to your classrooms.
+          Unlock a world of possibilities for your students through our tailored STEM workshops. Collaborate with TechStudioLabs to bring innovative learning experiences to your classrooms.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
@@ -531,7 +531,7 @@ export default function ExploreWorkshop() {
               repellendus etur quidem assumenda.
             </p>
             <div className="mt-10 flex items-center gap-x-4">
-              <h4 className="flex-none text-sm font-semibold leading-6 text-red-700">Perks of Partnering with TechGeniusLabs</h4>
+              <h4 className="flex-none text-sm font-semibold leading-6 text-red-700">Perks of Partnering with TechStudioLabs</h4>
               <div className="h-px flex-auto bg-gray-100" />
             </div>
             <ul
@@ -561,10 +561,10 @@ export default function ExploreWorkshop() {
                   Request Workshop
                 </a>
                 <p className="mt-6 text-sm leading-5 text-gray-50">
-               For more info Call us at +917224814174
+               For more info Call us at +918669584949
                 </p>
                 <p className="mt-6 text-sm leading-5 text-gray-50">
-               Or email at support@techgeniuslabs.in
+               Or email at contact@techstudiolabs.in
                 </p>
               </div>
             </div>

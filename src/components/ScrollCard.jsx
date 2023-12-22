@@ -22,24 +22,18 @@ import c5 from '../assets/c5.png'
 const products = [
     {
       id: 1,
-      //name: 'Basic Tee',
-      href: '#',
       imageSrc: c1,
       imageAlt: "",
       
     },
     {
         id: 2,
-        //name: 'Basic Tee',
-        href: '#',
         imageSrc: c2,
         imageAlt: "",
         
       },
       {
         id: 3,
-        //name: 'Basic Tee',
-        href: '#',
         imageSrc: c3,
         imageAlt: "",
         
@@ -47,21 +41,17 @@ const products = [
       },
       {
         id: 4,
-        //name: 'Basic Tee',
-        href: '#',
         imageSrc: c4,
         imageAlt: "",
         
       },
       {
         id: 5,
-        //name: 'Basic Tee',
-        href: '#',
         imageSrc: c5,
         imageAlt: "",
         
       },
-    // More products...
+
   ]
   
   export default function ScrollCard() {
@@ -69,13 +59,13 @@ const products = [
       <div className="bg-white">
         <div className="mx-auto max-w-2xl px-4 sm:px-6 sm:py-8 lg:max-w-7xl lg:px-8">
          
-        <div className="mx-auto max-w-2xl lg:text-center">
+        <div className="mx-auto max-w-4xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-red-600">Our Expertise</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             What we provide
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-          We foster a passion for technology among tech-inclined individuals through engaging project-based training and hands-on workshops.
+          Elevate your learning with TechStudioLabs, where we deliver unmatched expertise in IOT & Robotics in STEM education, guranteeing a transformative and industry-leading educational experience.
           </p>
         </div>
   
@@ -92,10 +82,10 @@ const products = [
                 <div className="mt-4 flex justify-between">
                   <div>
                     <h3 className="text-sm text-gray-700">
-                      <a href={product.href}>
+                      
                         <span aria-hidden="true" className="absolute inset-0" />
                         {product.name}
-                      </a>
+                     
                     </h3>
                     <p className="mt-1 text-sm text-gray-500">{product.color}</p>
                   </div>

@@ -4,12 +4,12 @@ import d3 from '../assets/d3.png'
 import d4 from '../assets/d4.png'
 
 const features = [
-    { name: '[1] School Registration', description: 'Schools begin by registering on our platform, providing essential details about their institution. Each school is assigned a dedicated page, such as www.tgl.com/schoolName.' },
-    { name: '[2] Request Workshop', description: 'Submit a workshop request with preferred dates, workshop type, and any specific requirements they may have' },
-    { name: '[3] Get Dedicated School Page', description: 'Our team reviews the workshop request and confirms availability. The confirmed workshop details are updated on the school\'s dedicated page, creating a centralized hub for their workshop interactions.' },
-    { name: '[4] Student Registration', description: 'students can register online on the school\'s dedicated page. Students select the workshop, complete the registration form, and proceed to payment.' },
-    { name: '[5] Get Complimentary Lifetime VIP access', description: 'Students who attend offline workshops gain complimentary access to our online learning platform. They receive login credentials, unlocking a range of free online courses in IoT and robotics.' },
-    { name: '[6] Post-Workshop Resources', description: 'After the workshop, students can access additional resources, project guides, and participate in discussions on the online platform. This fosters continuous learning and engagement beyond the workshop.' },
+    { name: '[1] School Registration', description: 'Schools begin by registering on our platform, providing essential details about their institution.' },
+    { name: '[2] Request Workshop', description: 'Submit a workshop request with preferred dates, workshop type, and any specific requirements they may have.' },
+    { name: '[3] Workshop Confirmation', description: 'Our team reviews the workshop request and confirms availability.' },
+    { name: '[4] Student Registration', description: 'Students Registration through Schools.' },
+    { name: '[5] Event Day: Hands On Workshop', description: 'Hands On workshop with real project using DIY learning kits' },
+    { name: '[6] Get Complimentary Lifetime VIP access', description: 'Students who attend offline workshops gain complimentary access to our online learning platform.' },
   ]
   
 

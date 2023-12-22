@@ -2,7 +2,7 @@ import React from 'react'
 import Error from './Error'
 import p2 from '../assets/p2.png'
 import a1 from '../assets/A1.gif'
-import p4 from '../assets/p4.png'
+import p4 from '../assets/p5.png'
 const Cta = () => {
   return (
     <div className="bg-white">

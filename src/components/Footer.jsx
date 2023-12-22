@@ -21,7 +21,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
           <div className="max-w-xl lg:max-w-lg">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">TechGeniusLabs.ai</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">TechStudioLabs.ai</h2>
             <p className="mt-4 text-lg leading-8 text-gray-300">
             Building a Foundation for Technology Success: Early Exposure Workshops to Equip Students with the Essential Skills and Knowledge for Success in the Technology-Driven World.
             </p>
