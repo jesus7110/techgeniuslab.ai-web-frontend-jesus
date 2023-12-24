@@ -16,61 +16,44 @@ function classNames(...classes) {
 
 
 export default function RequestWorkshop() {
-  const [agreed, setAgreed] = useState(false)
-  const [request, setRequest] = useState ({
-    school:'',
-    spoc:'', 
-    address:'', 
-    email:'', 
-    phone:'', 
-    expectedDateIn:'', 
-    expectedDateOut:'',
-    expectedParticipants:'',
-    classGroup:'',
-    how:'',
-    comment:'',
+  const [agreed, setAgreed] = useState(false);
+  const [request, setRequest] = useState({
+    school: '',
+    spoc: '',
+    address: '',
+    email: '',
+    phone: '',
+    expectedDateIn: '',
+    expectedDateOut: '',
+    expectedParticipants: '',
+    classGroup: '',
+    how: '',
+    comment: '',
+  });
 
-  })
 
-var name,value
-  const data = (e) => {
-    name = e.target.name;
-    value = e.target.value;
-    setRequest({...request, [name]:value});
-  }
+  const handleChange = (e) => {
+    console.log(request);
+    setRequest({ ...request, [e.target.name]: e.target.value });
+  };
+
+ 
 
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const { } = NewRequest;
+    // Access the correct object for form data
+    const formData = request;
+    console.log(firestore);
+    try {
+      await firestore.collection('responses').add(formData);
+      console.log('Form response stored in Database!');
+    } catch (error) {
+      console.error('Error storing form response:', error);
+    }
+  };
 
-    const options = {
-        method: 'POST',
-        headers: {
-            'Content-Type':'application/json'
-        },
-        body: JSON.stringify({
-            Name, Email, Number, message
-        })
-    }
-        const res = fetch(
-            '',
-            options
-        )
-        if(res){
-            alert("Data strored")
-        }
-        else{
-            alert("error occured")
-        }
-    }
-    
-   {/* try {
-        await firestore.collection('responses').add(formData);
-        console.log('Form response stored in Database! ');
-    }catch (error) {
-        console.error('Error storing form response : ', error);
-    }*/}
+  
   
 
 
@@ -112,6 +95,7 @@ var name,value
                 type="text"
                 name="school"
                 id="school"
+                value={request.school}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
@@ -125,6 +109,7 @@ var name,value
                 type="text"
                 name="spoc"
                 id="spoc"
+                value={request.spoc}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
@@ -138,6 +123,7 @@ var name,value
                 type="text"
                 name="address"
                 id="address"
+                value={request.address}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
@@ -151,6 +137,7 @@ var name,value
                 type="email"
                 name="email"
                 id="email"
+                value={request.email}
                 autoComplete="email"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -181,6 +168,7 @@ var name,value
                 type="tel"
                 name="phone"
                 id="phone"
+                value={request.school.phone}
                 autoComplete="tel"
                 className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
@@ -220,6 +208,7 @@ var name,value
                 type="date"
                 name="expectedDateIn"
                 id="expectedDateIn"
+                value={request.expectedDateIn}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
@@ -232,6 +221,7 @@ var name,value
                 type="date"
                 name="expectedDateOut"
                 id="expectedDateOut"
+                value={request.expectedDateOut}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
            
@@ -249,6 +239,7 @@ var name,value
                 type="number"
                 name="expectedParticipants"
                 id="expectedParticipants"
+                value={request.expectedParticipants}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
@@ -264,6 +255,7 @@ var name,value
                 type="text"
                 name="classGroup"
                 id="classGroup"
+                value={request.classGroup}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               >
                 <option> Select</option>
@@ -292,6 +284,7 @@ var name,value
                 type="text"
                 name="how"
                 id="how"
+                value={request.how}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               >
                  <option> Select</option>
@@ -313,6 +306,7 @@ var name,value
                 type="text"
                 name="comment"
                 id="comment"
+                value={request.comment}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>

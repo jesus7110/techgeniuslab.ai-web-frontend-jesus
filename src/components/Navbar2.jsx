@@ -9,7 +9,7 @@ import LOGO2 from './logo_nav2.png'
 
 const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'About Us', href: '#' },
+    { name: 'About Us', href: '/about' },
     { name: 'Workshop', href: '/exploreworkshop' },
     { name: 'Contact', href: '/contact' },
   ]

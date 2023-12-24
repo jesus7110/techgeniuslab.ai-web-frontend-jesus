@@ -56,7 +56,7 @@ const products = [
   
   export default function ScrollCard() {
     return (
-      <div className="bg-white">
+      <div id="aboutu" className="bg-white">
         <div className="mx-auto max-w-2xl px-4 sm:px-6 sm:py-8 lg:max-w-7xl lg:px-8">
          
         <div className="mx-auto max-w-4xl lg:text-center">
