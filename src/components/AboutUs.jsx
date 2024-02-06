@@ -4,7 +4,7 @@ import './AboutUs.css';
 import Navbar2 from './Navbar2';
 import Footer from './Footer';
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
-import p from '../assets/p1.png'
+import p1 from '../assets/salvin.jpeg'
 
 const features = [
   {
@@ -27,31 +27,27 @@ const features = [
 
 const teamMembers = [
   {
-    name: 'Tranter Jaskulski',
-    title: 'Founder & Specialist',
+    name: 'Ayan Hazra',
+    title: 'Founder & AI-ML Specialist',
     imageSrc: 'https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?fit=clamp&w=400&h=400&q=80',
   },
   {
-    name: 'Tranter Jaskulski',
-    title: 'Founder & Specialist',
-    imageSrc: 'https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?fit=clamp&w=400&h=400&q=80',
+    name: 'Salvin Rai',
+    title: 'Founder & BDA Specialist',
+    imageSrc: p1,
   },
   {
-    name: 'Tranter Jaskulski',
-    title: 'Founder & Specialist',
+    name: 'Nirmiti Deshmukh',
+    title: 'Founder &  in IOT',
     imageSrc: 'https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?fit=clamp&w=400&h=400&q=80',
   },
-  {
-    name: 'Tranter Jaskulski',
-    title: 'Founder & Specialist',
-    imageSrc: 'https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?fit=clamp&w=400&h=400&q=80',
-  },
+ 
 ];
 
 const devMembers = [
   {
-    name: 'Tranter Jaskulski',
-    title: 'Founder & Specialist',
+    name: 'Mayank',
+    title: 'Android Developer',
     imageSrc: 'https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?fit=clamp&w=400&h=400&q=80',
   },
   {
@@ -84,7 +80,7 @@ export default function AboutUs() {
             </div>
           </div>
 
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap  items-center justify-center">
             {teamMembers.map((member) => (
               <div key={member.name} className="w-full md:w-6/12 lg:w-3/12 px-6 sm:px-6 lg:px-4">
                 <div className="flex flex-col">
@@ -133,7 +129,7 @@ export default function AboutUs() {
             </div>
           </div>
 
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap items-center justify-center">
             {devMembers.map((member) => (
               <div key={member.name} className="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
                 <div className="flex flex-col">

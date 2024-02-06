@@ -9,9 +9,10 @@ import SchoolRegistration from './components/SchoolRegistration';
 import RequestWorkshop from './components/RequestWorkshop'
 import ExploreWorkshop from './components/ExploreWorkshop';
 import SignUp from './components/SignUp';
-import Contact from './components/Contact';
+import Contact from './pages/contact';
 import TestOverview from './components/TestOverview';
 import AboutUs from './components/AboutUs';
+import Stemlab from './pages/lab'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,6 +25,7 @@ root.render(
         <Route path="/requestworkshop" element={<RequestWorkshop/>} />
         <Route path="/signup" element={<SignUp/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/labsetup" element={<Stemlab/>}/>
         <Route path="/testoverview" element={<TestOverview/>} />
         <Route path="/about" element={<AboutUs/>} />
         <Route path="*" element={<Error/>} />
