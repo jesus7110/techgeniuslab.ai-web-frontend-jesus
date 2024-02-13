@@ -9,13 +9,13 @@ const stats = [
 const Stats = () => {
   return (
    
-          <div className="bg-white py-24 sm:py-32">
+          <div className="bg-white sm:py-2">
             <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">Check Out Our Stats</h2>
+          <h2 className="text-base font-semibold leading-7 text-red-600">Check Out Our Stats</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Why Choose Us
           </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600 py-1">
+          <p className="mt-6 text-lg leading-8 text-gray-600">
           We foster a passion for technology among tech-inclined individuals through engaging project-based training and hands-on workshops.
           </p>
           <br/>

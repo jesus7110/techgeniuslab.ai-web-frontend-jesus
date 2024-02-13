@@ -3,14 +3,15 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import LOGO from './logo_nav_ico.png'
+import LOGO2 from './logo_nav2.png'
 
 
 
 const navigation = [
-    { name: 'Home', href: '/error' },
-    { name: 'About Us', href: '#' },
-    { name: 'Workshop', href: '#' },
-    { name: 'Contact', href: '#' },
+    { name: 'Home', href: '/' },
+    { name: 'About Us', href: '#aboutu' },
+    { name: 'Workshop', href: '/exploreworkshop' },
+    { name: 'Contact', href: '/contact' },
   ]
 
   
@@ -20,10 +21,10 @@ const Navbar = () => {
     <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+            <a href="/" className="-m-1.5 p-1.5">
+              <span className="sr-only">techGeniusLabs</span>
               <img
-                className="h-8 w-auto"
+                className="h-10 w-auto"
                 src={LOGO}
                 alt=""
               />
@@ -47,9 +48,7 @@ const Navbar = () => {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-              Register School <span aria-hidden="true">&rarr;</span>
-            </a>
+           
           </div>
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -57,10 +56,10 @@ const Navbar = () => {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+                <span className="sr-only">techgenius.ai</span>
                 <img
                   className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  src={LOGO2}
                   alt=""
                 />
               </a>

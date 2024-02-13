@@ -2,7 +2,7 @@ import React from 'react'
 import Error from './Error'
 import p2 from '../assets/p2.png'
 import a1 from '../assets/A1.gif'
-import p4 from '../assets/p4.png'
+import p4 from '../assets/p5.png'
 const Cta = () => {
   return (
     <div className="bg-white">
@@ -16,8 +16,8 @@ const Cta = () => {
           <circle cx={512} cy={512} r={512} fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.7" />
           <defs>
             <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-              <stop stopColor="#7775D6" />
-              <stop offset={1} stopColor="#E935C1" />
+              <stop stopColor="#ffffff" />
+              <stop offset={1} stopColor="#ffffff" />
             </radialGradient>
           </defs>
         </svg>
@@ -32,12 +32,12 @@ const Cta = () => {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
             <a
-              href="#"
-              className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              href="/requestworkshop"
+              className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-indigo-900 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               Request a call
             </a>
-            <a href="#" className="text-sm font-semibold leading-6 text-white">
+            <a href="/requestworkshop" className="text-sm font-semibold leading-6 text-white">
               Register Now <span aria-hidden="true">→</span>
             </a>
           </div>

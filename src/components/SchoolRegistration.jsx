@@ -24,6 +24,7 @@ export default function SchholRegistration() {
   const [agreed, setAgreed] = useState(false)
 
   return (
+    <>
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div
         className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
@@ -38,16 +39,16 @@ export default function SchholRegistration() {
         />
       </div>
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact sales</h2>
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Register Now</h2>
         <p className="mt-2 text-lg leading-8 text-gray-600">
-          Aute magna irure deserunt veniam aliqua magna enim voluptate.
+          Register Now to get organise any handpicked workshop in your institute
         </p>
       </div>
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
-              First name
+              Organisation/School/Institute name
             </label>
             <div className="mt-2.5">
               <input
@@ -61,7 +62,7 @@ export default function SchholRegistration() {
           </div>
           <div>
             <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
-              Last name
+            Organisation/School/Institute ID
             </label>
             <div className="mt-2.5">
               <input
@@ -75,7 +76,7 @@ export default function SchholRegistration() {
           </div>
           <div className="sm:col-span-2">
             <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900">
-              Company
+              Applicant Name & Designation
             </label>
             <div className="mt-2.5">
               <input
@@ -115,9 +116,8 @@ export default function SchholRegistration() {
                   name="country"
                   className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
                 >
-                  <option>US</option>
-                  <option>CA</option>
-                  <option>EU</option>
+                  <option>IN</option>
+                  
                 </select>
                 <ChevronDownIcon
                   className="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400"
@@ -186,5 +186,6 @@ export default function SchholRegistration() {
         </div>
       </form>
     </div>
+    </>
   )
 }

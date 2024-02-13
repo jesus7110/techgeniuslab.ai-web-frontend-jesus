@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -18,10 +18,10 @@ function App() {
     
     <Navbar/>
     <Hero/>
-    <Card1/>
     <AboutUs/>
     <Grid/>
     <Stats/>
+    <AboutWorkshop/>
     <Cta/>
     <Footer/>
     
