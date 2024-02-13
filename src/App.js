@@ -10,7 +10,7 @@ import Grid from './components/Grid';
 import AboutUs from './components/AboutUs';
 import Footer from './components/Footer';
 import SchoolRegistration from './components/SchoolRegistration'
-
+import Card1 from './components/CardDefault'
 function App() {
 
   return (
@@ -18,6 +18,7 @@ function App() {
     
     <Navbar/>
     <Hero/>
+    <Card1/>
     <AboutUs/>
     <Grid/>
     <Stats/>
