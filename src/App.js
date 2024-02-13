@@ -1,6 +1,6 @@
 
 import './App.css';
-import Navbar from './components/Navbar2';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
 // import Banner from './components/Banner';
@@ -24,7 +24,7 @@ function App() {
     <Hero/>
     <LogoCloud/>
     <ScrollCard/>
-    <Provide/>
+    {/* <Provide/> */}
     <Stats/>
     <AboutWorkshop/>
     <Cta/>

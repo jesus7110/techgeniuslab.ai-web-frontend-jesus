@@ -8,6 +8,7 @@ import Setup from '../components/stemLab/setupinfo'
 import Imggrid from '../components/stemLab/imggrid'
 import HighL from '../components/stemLab/highlight'
 import Works from '../components/stemLab/work'
+import Lastinfo from '../components/stemLab/lastinfo'
 
 const Edit = () => {
   return (
@@ -17,8 +18,10 @@ const Edit = () => {
       <Feature/>
       <Setup/>
       <Imggrid/>
-      <HighL/>
-      <Works/>
+      <Lastinfo/>
+      
+     
+      
       <Footer/>
     </>
   )

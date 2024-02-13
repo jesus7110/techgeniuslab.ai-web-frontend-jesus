@@ -11,9 +11,9 @@ function ImageGrid() {
   ];
 
   return (
-    <div className="flex flex-col items-center">
-      <div className="bg-white shadow-md p-4 w-full max-w-[400px] md:max-w-[600px] text-center">
-        <h1 className="text-2xl font-bold mb-4">Image Gallery</h1>
+    <div className="flex flex-col items-center pb-28">
+      <div className="bg-white p-4 w-full max-w-[400px] md:max-w-[600px] text-center">
+      <h2 className="text-xl font-bold tracking-tight text-gray-900 sm:text-3xl ">Insights of Lab</h2>
         <p className="text-gray-600">Check out these stunning images!</p>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-3 p-4 max-w-[800px] md:max-w-[1200px] place-items-center">

@@ -1,17 +1,20 @@
 import React from 'react'
-import Constacts from '../components/Contact'
+
 import Navbar from'../components/Navbar2'
-import Contform from'../components/ContactUs'
-import Card from '../components/Contactcard'
+import Info from '../components/Workshop/Main'
+import Member from '../components/Workshop/membership'
 import Footer from '../components/Footer'
+import Types from '../components/Workshop/Types'
+
 
 const Edit = () => {
   return (
     <>
       <Navbar/>
-      <Contform/>
-      <Constacts/>
-      <Card/>
+      <Info/>
+      <Types/>
+      <Member/>
+     
       <Footer/>
     </>
   )

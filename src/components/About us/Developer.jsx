@@ -1,10 +1,10 @@
 
 import React from 'react';
 import './AboutUs.css'; 
-import Navbar2 from './Navbar2';
-import Footer from './Footer';
+import Navbar2 from '../Navbar2';
+import Footer from '../Footer';
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
-import p1 from '../assets/salvin.jpeg'
+import p1 from '../../assets/salvin.jpeg'
 
 const features = [
   {
@@ -163,7 +163,7 @@ export default function AboutUs() {
       </div>
     </div>
   </div>
-    <Footer/>
+    
   </>
   )
 }
