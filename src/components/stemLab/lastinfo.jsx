@@ -41,11 +41,11 @@ return (
 
               <input
                 className="shadow mb-2 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                type="text" placeholder="Applicants Name" name="applicantname" />
+                type="text" placeholder="Applicants Name" name="Applicant name" />
 
               <input
                 className="shadow mb-2 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                type="text" placeholder="Name of your Institutes" name="institutename" />
+                type="text" placeholder="Name of your Institutes" name="Institute name" />
 
               <input
                 className="shadow mb-2 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -53,7 +53,7 @@ return (
 
               <input
                 className="shadow mb-2 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                type="subject" placeholder="Phone" name="_subject" />
+                type="subject" placeholder="Mobile Number" name="number" />
 
               {/* <textarea
                 className="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"

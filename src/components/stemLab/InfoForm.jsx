@@ -19,7 +19,7 @@ class ContactForm extends React.Component {
 
               <input
                 className="shadow mb-2 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                type="text" placeholder="Name" name="name" />
+                type="text" placeholder="Institute Name" name="institutename" />
 
               <input
                 className="shadow mb-2 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -27,7 +27,7 @@ class ContactForm extends React.Component {
 
               <input
                 className="shadow mb-2 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                type="text" placeholder="Subject" name="_subject" />
+                type="text" placeholder="Mobile Number" name="number" />
 
               {/* <textarea
                 className="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
