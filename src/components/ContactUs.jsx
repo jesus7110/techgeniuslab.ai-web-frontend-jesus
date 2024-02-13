@@ -38,9 +38,9 @@ export default function ContactUs() {
         />
       </div>
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact sales</h2>
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact Us</h2>
         <p className="mt-2 text-lg leading-8 text-gray-600">
-          Aute magna irure deserunt veniam aliqua magna enim voluptate.
+          Plz Free to share your details with us.
         </p>
       </div>
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
@@ -75,7 +75,7 @@ export default function ContactUs() {
           </div>
           <div className="sm:col-span-2">
             <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900">
-              Company
+              School Name
             </label>
             <div className="mt-2.5">
               <input
@@ -115,7 +115,7 @@ export default function ContactUs() {
                   name="country"
                   className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
                 >
-                  <option>US</option>
+                  <option>IN</option>
                   <option>CA</option>
                   <option>EU</option>
                 </select>

@@ -1,29 +1,26 @@
-import React from 'react'
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import h1 from '../assets/1.png'
-import h2 from '../assets/2.png'
-import h3 from '../assets/3.png'
-import h4 from '../assets/4.png'
-import h5 from '../assets/5.png'
-import h6 from '../assets/6.png'
 
-
-
-const Hero = () => {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  return (
-    <div className="relative overflow-hidden bg-white py-10">
-      <div className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
+import { Fragment, useState } from 'react'
+import Navbar2 from '../Navbar2'
+import w11 from '../../assets/w11.png'
+import w12 from '../../assets/w12.png'
+import w13 from '../../assets/w13.png'
+import w14 from '../../assets/w14.png'
+import w15 from '../../assets/w15.png'
+export default function ExploreWorkshop() {
+    const [open, setOpen] = useState(false)
+   
+return (
+    <>
+    
+       <div className="relative overflow-hidden bg-blue-600">
+      <div className="pb-80 pt-16 sm:pb-40  sm:pt-24 lg:pb-48 lg:pt-40">
         <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
           <div className="sm:max-w-lg">
-         
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Bringing New Era of Education
+            <h1 className="text-2xl font-bold tracking-tight text-white sm:text-4xl py-10 ">
+            Hands-on tech courses that make you future-ready
             </h1>
-            <p className="mt-4 text-xl text-gray-500">
-            Empowering the Next Generation of Innovators: Hands-on Workshops to Ignite the Passion for Technology in Budding Tech Enthusiasts
+            <p className="mt-4 text-sm-4 text-white">
+            Tech Studio Labs provides the best hands-on workshop & free online courses for kids (Age 8+) and engineering students. Start learning for free today!
             </p>
           </div>
           <div>
@@ -38,53 +35,45 @@ const Hero = () => {
                     <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                         <img
-                          src={h1}
+                          src={w11}
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img
-                          src={h3}
-                          alt=""
-                          className="h-full w-full object-cover object-center"
-                        />
+                        
                       </div>
                     </div>
                     <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src={h2}
+                          src={w12}
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src={h4}
+                          src={w13}
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
-                        <img
-                          src={h5}
-                          alt=""
-                          className="h-full w-full object-cover object-center"
-                        />
+                      
                       </div>
                     </div>
                     <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src={h6}
+                          src={w14}
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
                         <img
-                          src={h4}
+                          src={w15}
                           alt=""
                           className="h-full w-full object-cover object-center"
                         />
@@ -94,24 +83,13 @@ const Hero = () => {
                 </div>
               </div>
 
-              <a
-                href="/exploreworkshop"
-                className="inline-block rounded-md border border-transparent bg-red-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
-              >
-                Explore Workshop
-              </a>
-              <a
-                href="/exploreworkshop"
-                className="inline-block rounded-md border ml-2  border-transparent bg-red-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
-              >
-                Explore Stem Lab Setup
-              </a>
+
             </div>
           </div>
+          
         </div>
       </div>
+      
     </div>
-  )
-}
-
-export default Hero
+    </>
+)}

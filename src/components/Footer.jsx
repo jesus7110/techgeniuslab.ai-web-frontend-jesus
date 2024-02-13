@@ -43,9 +43,9 @@ export default function Footer() {
                 <LinkIcon className="h-6 w-6 text-white" aria-hidden="true" />
               </div>
               <dt className="mt-4 font-semibold text-white"><a href="/" >Home</a></dt>
-              <dt className="mt-4 font-semibold text-white"><a href="/" >About Us</a></dt>
-              <dt className="mt-4 font-semibold text-white"><a href="/" >Services</a></dt>              
-              <dt className="mt-4 font-semibold text-white"><a href="/" >Contact Us</a></dt>
+              <dt className="mt-4 font-semibold text-white"><a href="/about" >About Us</a></dt>
+              <dt className="mt-4 font-semibold text-white"><a href="/service" >Services</a></dt>              
+              <dt className="mt-4 font-semibold text-white"><a href="/contact" >Contact Us</a></dt>
             </div>
         </dl>
         </div>
