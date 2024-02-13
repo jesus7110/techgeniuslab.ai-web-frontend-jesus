@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 import Vision from '../components/About us/vision'
 import WhyChooseUs from '../components/About us/whychooseus'
 import JoinUs from '../components/About us/joinus'
+import NewWay from '../components/About us/newWay'
 
 
 const Edit = () => {
@@ -16,6 +17,7 @@ const Edit = () => {
       <Main/>
       <Vision/>
       <WhyChooseUs/>
+      
       <JoinUs/>
       <Footer/>
     </>
