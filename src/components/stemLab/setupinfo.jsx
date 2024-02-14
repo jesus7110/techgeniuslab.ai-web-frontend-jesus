@@ -26,45 +26,74 @@ function PlanCard({ title }) {
           return [
             'Basic Kits',
             '3 set of Microcontroller',
-            'User Management',
-            'Reports',
-            'Unlimited Users',
-            'Data Export',
-            'Automated Workflows',
-            'API Access'
+            '6 set of Sensorst',
+            'Electronics Hardware Tools',
+            'Curated Resources, curriculum, with Manuals',
+            'Teacher Training of 2 weeks',
+            '3 Complimentary Student mentoring sessions',
+            'Post Lab support up to 3 months',
+            'Lab Upgradation at discounted price'
           ];
         case 'Beta Lab':
           return [
-            'Free Setup Guidance',
-            'Email Support',
-            'User Management',
-            'Reports',
+            'Basic Kits',
+            '6 set of Microcontrollers',
+            'Microprocessor & single board computer',
+            'Robo car kits',
+            'Battery Set with charging modules',
+            'Electronics Hardware Tools',
+            'Curated Resources, curriculum, with Manuals',
+            'Teacher Training of 2 weeks',
+            '4 Complimentary Student mentoring sessions',
+            '1 paid workshop and 1 paid course free of cost',
+            '1 paid evaluation free of cost',
+            'Post Lab support up to 6 months',
+            'Lab Upgradation at discounted price'
             
           ];
         case 'Gamma Lab':
           return [
-            'Free Setup Guidance',
-            'Email Support',
-            'User Management',
-            'Reports',
-            'Unlimited Users',
-            'Data Export',
-            'Automated Workflows',
-            'API Access'
+            'Basic kits',
+            '3D printer',
+            '6 set of Microcontrollers',
+            'Microprocessor & single board computer',
+            '26 set of Sensors',
+            'Robo Car kits with chassis',
+            'Radio Controller Kit',
+            'Battery Set with charging modules',
+            'Electronics Hardware Tools',
+            'Curated Resources, curriculum, with Manuals',
+            'Teacher Training of 3 weeks',
+            '5 Complimentary Student mentoring sessions',
+            '2 paid workshops and 3 paid courses free of cost',
+            '2 paid evaluation free of cost',
+            'Post Lab support up to 9 months',
+            'Lab Upgradation at discounted price'
           ];
           case 'Delta Lab':
           return [
-            'Free Setup Guidance',
-            'Email Support',
-            'User Management',
-            'Reports',
-            'Unlimited Users',
-            'Data Export',
-            'Automated Workflows',
-            'API Access'
+            'Basic kits',
+            '3D printer with filament',
+            '7 set of Microcontrollers',
+            'Microprocessor & single board computer',
+            'Camera Module',
+            'Drone kits',
+            '26 set of Sensors',
+            'Robo Car kits with chassis',
+            'Radio Controller Kit',
+            'Battery Set with charging modules',
+            'Electronics Hardware Tools',
+            'Curated Resources, curriculum, with Manuals',
+            'Teacher Training of 3 weeks',
+            '5 Complimentary Student mentoring sessions',
+            '2 paid workshops and 3 paid courses free of cost',
+            '2 paid evaluation free of cost',
+            '1 Drone building session',
+            'Post Lab support up to 9 months',
+            'Lab Upgradation at discounted price'
           ];
         default:
-          return ['ma chuda'];
+          return ['Sorry it will upload fast '];
       }
     };
   
