@@ -19,7 +19,22 @@ const JoinUs = () => {
           <p className="mt-1 text-lg sm:text-xl lg:text-lg text-black">Ready to take the next step in your career? Explore our current job openings and apply today! Alternatively, if you don't see a position that matches your skills and experience, feel free to reach out to us with your resume and cover letter outlining why you'd be a great fit for our team.
 
 Join us in shaping the future of TechStudiosLabs and making a difference in the world!</p>
+
+              
         </div>
+
+              <a
+                href="/career"
+                className="inline-block rounded-md mt-20 border border-transparent bg-red-800 px-8 py-3 text-center font-medium text-white hover:bg-slate-900"
+              >
+                Explore Career Page
+              </a>
+              <a
+                href="/apply"
+                className="inline-block rounded-md border ml-8 mt-20 border-transparent bg-red-800 px-8 py-3 text-center font-medium text-white hover:bg-slate-900"
+              >
+                Apply with Resume
+              </a>
       </div>
     </div>
   );
