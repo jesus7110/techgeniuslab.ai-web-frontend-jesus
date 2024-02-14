@@ -6,13 +6,13 @@ import LOGO2 from './logo_nav2.png';
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'About Us', href: '/about' },
-  { name: 'Workshop', href: '/workshop' },
+  { name: 'Stem Lab', href: '/labsetup' },
+  { name: 'Learning Programs', href: '/workshop' },
   {
-    name: 'Contact',
+    name: 'About',
     href: '#',
     subPages: [
-      { name: 'Stem Setup', href: '/labsetup' },
+      { name: 'About Us', href: '/about' },
       { name: 'Contact', href: '/contact' },
       { name: 'Service', href: '/service' }
     ]
