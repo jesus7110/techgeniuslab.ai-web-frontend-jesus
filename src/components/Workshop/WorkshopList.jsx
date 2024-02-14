@@ -1,5 +1,7 @@
 import React from 'react';
-
+import wlp1 from '../../assets/wlp1.png'
+import wlp2 from '../../assets/wlp2.png'
+import wlp3 from '../../assets/wlp3.png'
 const ListItem = ({ title, subtitle, description, imageUrl, link }) => {
   return (
     <li className="relative flex flex-col sm:flex-row xl:flex-col items-start">
@@ -45,21 +47,21 @@ const WorkshopList = () => {
             title="Mini Workshop"
             subtitle="STEM, IoT, and AI For young and tech aspired innovators"
             description="Perfect for beginners, this workshop offers a hands-on introduction to the exciting world of technology. Particpants will gain foundational knowledge and practical skills to embark on your tech adventure."
-            imageUrl="https://tailwindcss.com/_next/static/media/headlessui@75.c1d50bc1.jpg"
+            imageUrl={wlp3}
             link="#miniworshop"
           />
           <ListItem
             title="Bootcamp"
             subtitle="From the scratch to the advance level of with 5+ projects"
             description="Designed for intermediate learners, where Participants learn about the networking, protocols, hands on experience with devices and collaborate on real-world projects, master industry-relevant tools, and emerge with the expertise to tackle complex challenges."
-            imageUrl="https://tailwindcss.com/_next/static/media/heroicons@75.4a558f35.jpg"
+            imageUrl={wlp2}
             link="#bootcamp"
           />
           <ListItem
             title="Summer Camp"
             subtitle="Project oriented learning to achieve the perfection"
             description="This transformative program is designed for participants with intermediate to advanced skills where they will learn about the project ideation and solution by combining multiple domains and scratch coding for all to enhance the learning and expertizing multiple domains"
-            imageUrl="https://tailwindcss.com/_next/static/media/heropatterns@75.82a09697.jpg"
+            imageUrl={wlp1}
             link="#summercamp"
           />
         </ul>
