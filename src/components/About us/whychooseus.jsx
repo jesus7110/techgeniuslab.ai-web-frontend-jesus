@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
             <p className="mt-1 text-10xm text-black">- Offer ongoing support and guidance to students and educators.</p>
           </div>
           <div className="flex justify-end">
-            <button className="bg-red-900 text-white px-16 py-5 rounded " onClick={openPdf}>Check out our Brochure</button>
+            <button className="bg-red-900 text-white px-16 py-5 rounded hover:bg-slate-900 " onClick={openPdf}>Check out our Brochure</button>
           </div>
         </div>
       </div>
