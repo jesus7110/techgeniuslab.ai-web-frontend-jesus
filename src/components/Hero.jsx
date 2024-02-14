@@ -95,13 +95,13 @@ const Hero = () => {
               </div>
 
               <a
-                href="/exploreworkshop"
+                href="/workshop"
                 className="inline-block rounded-md border border-transparent bg-red-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
               >
                 Explore Workshop
               </a>
               <a
-                href="/exploreworkshop"
+                href="/labsetup"
                 className="inline-block rounded-md border ml-2  border-transparent bg-red-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
               >
                 Explore Stem Lab Setup

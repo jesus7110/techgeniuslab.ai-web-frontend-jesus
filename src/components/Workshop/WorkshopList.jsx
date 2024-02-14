@@ -43,24 +43,24 @@ const WorkshopList = () => {
         <ul className="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start p-8">
           <ListItem
             title="Mini Workshop"
-            subtitle="Completely unstyled, fully accessible UI components"
-            description="Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS."
+            subtitle="STEM, IoT, and AI For young and tech aspired innovators"
+            description="Perfect for beginners, this workshop offers a hands-on introduction to the exciting world of technology. Particpants will gain foundational knowledge and practical skills to embark on your tech adventure."
             imageUrl="https://tailwindcss.com/_next/static/media/headlessui@75.c1d50bc1.jpg"
             link="#miniworshop"
           />
           <ListItem
-            title="Summer Camp"
-            subtitle="Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS."
-            description="A set of 450+ free MIT-licensed SVG icons. Available as basic SVG icons and via first-party React and Vue libraries."
+            title="Bootcamp"
+            subtitle="From the scratch to the advance level of with 5+ projects"
+            description="Designed for intermediate learners, where Participants learn about the networking, protocols, hands on experience with devices and collaborate on real-world projects, master industry-relevant tools, and emerge with the expertise to tackle complex challenges."
             imageUrl="https://tailwindcss.com/_next/static/media/heroicons@75.4a558f35.jpg"
-            link="#summercamp"
+            link="#bootcamp"
           />
           <ListItem
-            title="Bootcamp"
-            subtitle="Seamless SVG background patterns by the makers of Tailwind CSS."
-            description="A collection of over 100 free MIT-licensed high-quality SVG patterns for you to use in your web projects."
+            title="Summer Camp"
+            subtitle="Project oriented learning to achieve the perfection"
+            description="This transformative program is designed for participants with intermediate to advanced skills where they will learn about the project ideation and solution by combining multiple domains and scratch coding for all to enhance the learning and expertizing multiple domains"
             imageUrl="https://tailwindcss.com/_next/static/media/heropatterns@75.82a09697.jpg"
-            link="#bootcamp"
+            link="#summercamp"
           />
         </ul>
       </div>
