@@ -61,7 +61,7 @@ const Navbar = () => {
                 <div className="relative group">
                   <a
                     href={item.href}
-                    className="text-sm font-semibold leading-6 text-gray-900 group relative flex items-center transition duration-300 ease-in-out hover:text-red-500 hover:underline-red-500"
+                    className="text-sm font-semibold leading-6 text-gray-900 group relative flex items-center transition duration-300 ease-in-out hover:text-red-800 hover:underline-red-500"
                     onClick={() => toggleSubmenu(index)}
                   >
                     <span>{item.name}</span>
@@ -85,7 +85,7 @@ const Navbar = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-sm font-semibold leading-6 text-gray-900 transition duration-300 ease-in-out hover:text-red-500 hover:underline-red-500"
+                  className="text-sm font-semibold leading-6 text-gray-900 transition duration-300 ease-in-out hover:text-red-700 "
                 >
                   {item.name}
                 </a>
@@ -145,7 +145,7 @@ const Navbar = () => {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-red-500 hover:underline-red-500 transition duration-300 ease-in-out"
+                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-red-800 hover:underline-red-500 transition duration-300 ease-in-out"
                       >
                         {item.name}
                       </a>
