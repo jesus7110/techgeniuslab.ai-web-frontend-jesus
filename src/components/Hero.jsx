@@ -96,15 +96,15 @@ const Hero = () => {
 
               <a
                 href="/workshop"
-                className="inline-block rounded-md border border-transparent bg-red-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
+                className="inline-block rounded-md border border-transparent bg-red-700 px-8 py-3 text-center font-medium text-white hover:bg-slate-800"
               >
-                Explore Workshop
+                Explore Workshops
               </a>
               <a
                 href="/labsetup"
-                className="inline-block rounded-md border ml-2  border-transparent bg-red-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
+                className="inline-block rounded-md border ml-2  border-transparent bg-red-700 px-8 py-3 text-center font-medium text-white hover:bg-slate-800"
               >
-                Explore Stem Lab Setup
+                Stem Lab Setup
               </a>
             </div>
           </div>
