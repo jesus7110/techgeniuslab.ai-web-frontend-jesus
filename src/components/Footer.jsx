@@ -32,8 +32,8 @@ export default function Footer() {
               <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
                 <PencilIcon className="h-6 w-6 text-white" aria-hidden="true" />
               </div>
-              <dt className="mt-4 font-semibold text-white"><a href="/" >Workshops</a></dt>
-              <dt className="mt-4 font-semibold text-white"><a href="/exploreworkshop" >School Workshops</a></dt>
+              <dt className="mt-4 font-semibold text-white"><a href="/labsetup" >Stem Lab</a></dt>
+              <dt className="mt-4 font-semibold text-white"><a href="/workshop" >School Workshops</a></dt>
               <dt className="mt-4 font-semibold text-white"><a href="/requestworkshop" >Workshop Schedule</a></dt>              
               <dt className="mt-4 font-semibold text-white"><a href="/exploreworkshop#checkcourses" >Free Courses</a></dt>
             </div>
