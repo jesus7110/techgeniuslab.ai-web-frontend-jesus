@@ -8,7 +8,7 @@ export default function ExploreWorkshop() {
 return (
     <>
     
-    <div className="relative isolate overflow-hidden bg-red-800 py-16 sm:py-24 lg:py-32">
+    <div className="relative isolate overflow-hidden bg-red-800 py-16 sm:py-24 lg:py-26">
       <div className="mx-auto max-w-7xl pt-4 pb-4 px-6 lg:px-2">
         <div className="mx-auto grid max-w-2xl pt-10 grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
           <div className="max-w-xl lg:max-w-lg mt-28">
