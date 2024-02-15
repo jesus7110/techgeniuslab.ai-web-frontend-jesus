@@ -4,12 +4,12 @@ import d3 from '../assets/d3.png'
 import d4 from '../assets/d4.png'
 
 const features = [
-    { name: '[1] Register or Contact Us', description: 'Institute can begin the process by filling out a simple registration form or reaching out to us directly.' },
-    { name: '[2] Meeting Schedule', description: 'Once we receive your registration, we will schedule a meeting to discuss your Institute needs and preferences.' },
-    { name: '[3] Customization Available', description: 'We understand that every Institute is unique. We will work with you to customize our workshops to suit your requirements.' },
-    { name: '[4] Working on the Workshop Module', description: 'Our team will start working on developing the workshop module tailored to your Institute curriculum and goals.' },
-    { name: '[5] Sign the MOU', description: 'After finalizing the details, we will sign a Memorandum of Understanding (MOU) to formalize our partnership.' },
-    { name: '[6] Schedule Date and Execute', description: 'Once everything is in place, we will schedule the workshop dates and execute the hands-on learning experience for your students.' },
+    { name: '[1] School Registration', description: 'Schools begin by registering on our platform, providing essential details about their institution.' },
+    { name: '[2] Request Workshop', description: 'Submit a workshop request with preferred dates, workshop type, and any specific requirements they may have.' },
+    { name: '[3] Workshop Confirmation', description: 'Our team reviews the workshop request and confirms availability.' },
+    { name: '[4] Student Registration', description: 'Students Registration through Schools.' },
+    { name: '[5] Event Day: Hands On Workshop', description: 'Hands On workshop with real project using DIY learning kits' },
+    { name: '[6] Get Complimentary Lifetime VIP access', description: 'Students who attend offline workshops gain complimentary access to our online learning platform.' },
   ]
   
 
@@ -21,7 +21,7 @@ const features = [
           <h2 className="text-base font-semibold leading-7 text-red-600">Seamless Process</h2>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">How It Works</h2>
             <p className="mt-4 text-gray-500">
-           Register your Institute today and unlock the door to a world of hands-on learning in IoT, AI and robotics!
+           Register your school today and unlock the door to a world of hands-on learning in IoT and robotics!
             </p>
   
             <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
