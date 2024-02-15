@@ -1,10 +1,10 @@
 
 import React from 'react';
 import './AboutUs.css'; 
-import Navbar2 from '../Navbar2';
-import Footer from '../Footer';
+import Navbar2 from './Navbar2';
+import Footer from './Footer';
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
-import p1 from '../../assets/salvin.jpeg'
+import p from '../assets/p1.png'
 
 const features = [
   {
@@ -27,27 +27,31 @@ const features = [
 
 const teamMembers = [
   {
-    name: 'Ayan Hazra',
-    title: 'Founder & AI-ML Specialist',
+    name: 'Tranter Jaskulski',
+    title: 'Founder & Specialist',
     imageSrc: 'https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?fit=clamp&w=400&h=400&q=80',
   },
   {
-    name: 'Salvin Rai',
-    title: 'Founder & BDA Specialist',
-    imageSrc: p1,
-  },
-  {
-    name: 'Nirmiti Deshmukh',
-    title: 'Founder &  in IOT',
+    name: 'Tranter Jaskulski',
+    title: 'Founder & Specialist',
     imageSrc: 'https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?fit=clamp&w=400&h=400&q=80',
   },
- 
+  {
+    name: 'Tranter Jaskulski',
+    title: 'Founder & Specialist',
+    imageSrc: 'https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?fit=clamp&w=400&h=400&q=80',
+  },
+  {
+    name: 'Tranter Jaskulski',
+    title: 'Founder & Specialist',
+    imageSrc: 'https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?fit=clamp&w=400&h=400&q=80',
+  },
 ];
 
 const devMembers = [
   {
-    name: 'Mayank',
-    title: 'Android Developer',
+    name: 'Tranter Jaskulski',
+    title: 'Founder & Specialist',
     imageSrc: 'https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?fit=clamp&w=400&h=400&q=80',
   },
   {
@@ -80,7 +84,7 @@ export default function AboutUs() {
             </div>
           </div>
 
-          <div className="flex flex-wrap  items-center justify-center">
+          <div className="flex flex-wrap">
             {teamMembers.map((member) => (
               <div key={member.name} className="w-full md:w-6/12 lg:w-3/12 px-6 sm:px-6 lg:px-4">
                 <div className="flex flex-col">
@@ -129,7 +133,7 @@ export default function AboutUs() {
             </div>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center">
+          <div className="flex flex-wrap">
             {devMembers.map((member) => (
               <div key={member.name} className="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
                 <div className="flex flex-col">
@@ -163,7 +167,7 @@ export default function AboutUs() {
       </div>
     </div>
   </div>
-    
+    <Footer/>
   </>
   )
 }
