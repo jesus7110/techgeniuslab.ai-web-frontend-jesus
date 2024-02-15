@@ -1,18 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
-import Banner from './components/Banner';
+// import Banner from './components/Banner';
 import Cta from './components/Cta';
-import Error from './components/Error';
-import Grid from './components/Grid';
-import AboutUs from './components/AboutUs';
+// import Error from './components/Error';
+// import Grid from './components/Grid';
+// import AboutUs from './components/AboutUs';
 import Footer from './components/Footer';
-import SchoolRegistration from './components/SchoolRegistration';
+// import SchoolRegistration from './components/SchoolRegistration';
 import ScrollCard from './components/ScrollCard';
 import LogoCloud from './components/LogoCloud';
 import AboutWorkshop from './components/AboutWorkshop';
+import Provide from'./components/provide'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
     <Hero/>
     <LogoCloud/>
     <ScrollCard/>
+    {/* <Provide/> */}
     <Stats/>
     <AboutWorkshop/>
     <Cta/>

@@ -21,7 +21,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
           <div className="max-w-xl lg:max-w-lg">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">TechGeniusLabs.ai</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">TechStudioLabs.ai</h2>
             <p className="mt-4 text-lg leading-8 text-gray-300">
             Building a Foundation for Technology Success: Early Exposure Workshops to Equip Students with the Essential Skills and Knowledge for Success in the Technology-Driven World.
             </p>
@@ -32,10 +32,9 @@ export default function Footer() {
               <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
                 <PencilIcon className="h-6 w-6 text-white" aria-hidden="true" />
               </div>
-              <dt className="mt-4 font-semibold text-white"><a href="/" >Workshops</a></dt>
-              <dt className="mt-4 font-semibold text-white"><a href="/" >School Workshops</a></dt>
-              <dt className="mt-4 font-semibold text-white"><a href="/" >Workshop Schedule</a></dt>              
-              <dt className="mt-4 font-semibold text-white"><a href="/" >Free Courses</a></dt>
+              <dt className="mt-4 font-semibold text-white"><a href="/labsetup" >Stem Lab</a></dt>
+              <dt className="mt-4 font-semibold text-white"><a href="/workshop" >Learning Programs</a></dt>
+              <dt className="mt-4 font-semibold text-white"><a href="/requestworkshop" >Organise a Workshop</a></dt>              
             </div>
 
             <div className="flex flex-col items-start">
@@ -43,9 +42,9 @@ export default function Footer() {
                 <LinkIcon className="h-6 w-6 text-white" aria-hidden="true" />
               </div>
               <dt className="mt-4 font-semibold text-white"><a href="/" >Home</a></dt>
-              <dt className="mt-4 font-semibold text-white"><a href="/" >About Us</a></dt>
-              <dt className="mt-4 font-semibold text-white"><a href="/" >Services</a></dt>              
-              <dt className="mt-4 font-semibold text-white"><a href="/" >Contact Us</a></dt>
+              <dt className="mt-4 font-semibold text-white"><a href="/about" >About Us</a></dt>
+              <dt className="mt-4 font-semibold text-white"><a href="/service" >Other Services</a></dt>              
+              <dt className="mt-4 font-semibold text-white"><a href="/contact" >Contact Us</a></dt>
             </div>
         </dl>
         </div>
