@@ -33,9 +33,8 @@ export default function Footer() {
                 <PencilIcon className="h-6 w-6 text-white" aria-hidden="true" />
               </div>
               <dt className="mt-4 font-semibold text-white"><a href="/labsetup" >Stem Lab</a></dt>
-              <dt className="mt-4 font-semibold text-white"><a href="/workshop" >School Workshops</a></dt>
-              <dt className="mt-4 font-semibold text-white"><a href="/requestworkshop" >Workshop Schedule</a></dt>              
-              <dt className="mt-4 font-semibold text-white"><a href="/exploreworkshop#checkcourses" >Free Courses</a></dt>
+              <dt className="mt-4 font-semibold text-white"><a href="/workshop" >Learning Programs</a></dt>
+              <dt className="mt-4 font-semibold text-white"><a href="/requestworkshop" >Organise a Workshop</a></dt>              
             </div>
 
             <div className="flex flex-col items-start">
@@ -44,7 +43,7 @@ export default function Footer() {
               </div>
               <dt className="mt-4 font-semibold text-white"><a href="/" >Home</a></dt>
               <dt className="mt-4 font-semibold text-white"><a href="/about" >About Us</a></dt>
-              <dt className="mt-4 font-semibold text-white"><a href="/service" >Services</a></dt>              
+              <dt className="mt-4 font-semibold text-white"><a href="/service" >Other Services</a></dt>              
               <dt className="mt-4 font-semibold text-white"><a href="/contact" >Contact Us</a></dt>
             </div>
         </dl>

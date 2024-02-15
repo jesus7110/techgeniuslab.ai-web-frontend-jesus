@@ -1,14 +1,13 @@
 import React from 'react';
+import L1 from '../../assets/labinsight1.png'
+import L2 from '../../assets/labinsight2.jpg'
+import L3 from '../../assets/labinsight3.jpg'
+import L4 from '../../assets/labinsight4.webp'
+import L5 from '../../assets/labinsight5.jpg'
+import L6 from '../../assets/labinsight6.jpg'
 
 function ImageGrid() {
-  const imageSources = [
-    'https://source.unsplash.com/collection/1346951/400x400?sig=1',
-    'https://source.unsplash.com/collection/1346951/400x400?sig=2',
-    'https://source.unsplash.com/collection/1346951/400x400?sig=3',
-    'https://source.unsplash.com/collection/1346951/400x400?sig=4',
-    'https://source.unsplash.com/collection/1346951/400x400?sig=5',
-    'https://source.unsplash.com/collection/1346951/400x400?sig=6'
-  ];
+  const imageSources = [ L1,L2,L3,L4,L6,L5 ];
 
   return (
     <div className="flex flex-col items-center pb-28">
