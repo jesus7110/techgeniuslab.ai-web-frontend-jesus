@@ -25,7 +25,7 @@ const FeatureSection = () => (
         />
         <ComponentCard
           title="Expert Sessions & Mentorship"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet"
+          description="With customised expert trainning for faculty development and student development stregthen your institutions' educational excellence . Beyond training, our niche courses provide students with industry-standard skills, providing comprehensive preparation for future success."
         />
         <ComponentCard
           title="Student Learning Portal"
