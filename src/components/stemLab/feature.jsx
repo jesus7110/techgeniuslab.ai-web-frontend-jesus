@@ -29,7 +29,7 @@ const FeatureSection = () => (
         />
         <ComponentCard
           title="Student Learning Portal"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet"
+          description="Lab supported with an in-app student portal, which allows for flexible study at any time and from any location. The feature-rich platform provides a seamless educational experience, including detailed results, scoring, and progress monitoring."
         />
       </div>
     </div>

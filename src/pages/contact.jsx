@@ -10,7 +10,7 @@ const Edit = () => {
     <>
       <Navbar/>
       <Contform/>
-      <Constacts/>
+      
       <Card/>
       <Footer/>
     </>
