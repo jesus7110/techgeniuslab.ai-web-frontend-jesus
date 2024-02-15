@@ -9,11 +9,13 @@ import Cta from './components/Cta';
 // import Grid from './components/Grid';
 // import AboutUs from './components/AboutUs';
 import Footer from './components/Footer';
+
 // import SchoolRegistration from './components/SchoolRegistration';
 import ScrollCard from './components/ScrollCard';
 import LogoCloud from './components/LogoCloud';
 import AboutWorkshop from './components/AboutWorkshop';
 import Provide from'./components/provide'
+
 
 function App() {
 
@@ -22,9 +24,10 @@ function App() {
     
     <Navbar/>
     <Hero/>
+
     <LogoCloud/>
     <ScrollCard/>
-    {/* <Provide/> */}
+
     <Stats/>
     <AboutWorkshop/>
     <Cta/>
