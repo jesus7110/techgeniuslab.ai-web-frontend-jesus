@@ -47,7 +47,7 @@ const Hero = () => {
                 aria-hidden="true"
                 className="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
               >
-                <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+                <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8  lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
                   <div className="flex items-center space-x-6 lg:space-x-8">
                     <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
@@ -109,10 +109,16 @@ const Hero = () => {
               </div>
 
               <a
-                href="/exploreworkshop"
-                className="inline-block rounded-md border border-transparent bg-red-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
+                href="/workshop"
+                className="inline-block sm: rounded-md border border-transparent bg-red-700 px-8 py-3 text-center font-medium text-white hover:bg-slate-800"
               >
-                Explore Workshop
+                Explore Workshops
+              </a>
+              <a
+                href="/labsetup"
+                className="inline-block rounded-md border ml-2 border-transparent bg-red-700 px-8 py-3 text-center font-medium text-white hover:bg-slate-800"
+              >
+                Stem Lab Setup
               </a>
             </div>
           </div>

@@ -30,8 +30,15 @@ const Cta = () => {
           <p className="mt-6 text-lg leading-8 text-gray-300">
             To organise a offline customised workshop & training for your insitute
           </p>
+
+          <p className="mt-6 text-lg leading-8 text-gray-300">
+          Whether you're a school, college, or organization, our team will work with you to design a workshop that meets your objectives and exceeds your expectations.
+          </p>
           <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
             <a
+
+                        
+
               href="/requestworkshop"
               className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-indigo-900 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
